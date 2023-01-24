@@ -250,7 +250,7 @@ h1, a:visited{
 	width: 100%;
 }
 
-.web_table, .html_table_body, .data_type_table, .flowchart_table, .css_table1_{
+.web_table, .html_table_body, .data_type_table, .flowchart_table, .css_table1_, .structureDiagram_table{
 	margin:auto;
 	width: 70%;
 	background-color:black;

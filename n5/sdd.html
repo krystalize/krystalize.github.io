@@ -78,49 +78,7 @@
 				</div>
 				<div id="Design" class="tabcontent" style="display:none">
 					<h2>Design</h2>
-					<p>The design stage is where the program is broken down into a plan of how the programmer or team will solve the problem</p>
-					<p></p>
-					<h3>Data Types</h3>
-					<p>There are 5 data types you need to be aware of;</p>
-					<table class="data_type_table">
-						<thead>
-							<tr>
-								<th>Data Type</th>
-								<th>Description</th>
-								<th>Example</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>Character</td>
-								<td>A single character</td>
-								<td>A</td>
-							</tr>
-							<tr>
-								<td>String</td>
-								<td>A string of characters</td>
-								<td>Hello</td>
-							</tr>
-							<tr>
-								<td>Int</td>
-								<td>A whole number</td>
-								<td>20</td>
-							</tr>
-							<tr>
-								<td>Real</td>
-								<td>A decimal number</td>
-								<td>29.99</td>
-							</tr>
-							<tr>
-								<td>Boolean</td>
-								<td>True or False</td>
-								<td>True</td>
-							</tr>
-						</tbody>
-					</table>
-					<h3>Data Structures</h3>
-					<p>Sometimes a simple data type is not sufficient for the program - instead we must consider the use of arrays.</p>
-					<p>At National 5 level you only need to know about 1-Dimensional arrays. These are data structures that contain multiple pieces of data inside one data structure and under one name. The data inside should be of the same data type (see above)</p>
+					<p>The design stage is where the program is broken down into a plan of how the programmer or team will solve the problem.</p>
 					<h3>Design Notation</h3>
 					<p>The program that is to be written will be designed using one of three design notations;</p>
 					<ol>
@@ -128,7 +86,7 @@
 						<li>Flowchart</li>
 						<li>Pseudocode</li>
 					</ol>
-					<p>Any one of the 3 design notations are expected in your practical assessment as well as your written assessment - however, this site will only cover 2 of the 3 (Flowchart and Pseudocode)</p>
+					<p>Any one of the 3 design notations are expected in your practical assessment as well as your written assessment, but you will still be expected to be able to read and understand all 3.</p>
 					<p><b>Flowchart</b></p>
 					<p>Flowcharts detail the order of execution of instructions within a program. They are easy to follow, only have one possible path, a start and an end. They use shapes to determine the type of instruction and arrows to show the path of the flowchart.</p>
 					<table class="flowchart_table">
@@ -221,6 +179,55 @@ while guess != number:
 else:
     print("Well done, you guessed correct")
 </code></pre>
+					<p><b>Structure Diagram</b></p>
+					<p>A structure diagram is very similar to a flowchart in that is uses symbols to denote certain parts of the program, but the layout is different and doesn't need to flow or have a path to follow like a flowchart does - instead think of it as a hierarchical diagram.</p>
+					<table class="strucureDiagram_table">
+						<thead>
+							<tr>
+								<th class="symbolCol">Symbol</th>
+								<th>Description</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>
+									<svg width="100" height="50">
+										<rect width="100" height="50" />
+										Sorry, your browser does not support inline SVG.
+									</svg>
+								</td>
+								<td>A process that doesn't fit into any of the below</td>
+							</tr>
+							<tr>
+								<td>
+									<svg width="120" height="50">
+										<polygon class="hex" points="20,0 100,0 120,25 100,50 20,50 0,25"></polygon>
+									</svg>
+								</td>
+								<td>This is used to display selection (IF statements)</td>
+							</tr>
+								<td>
+									<svg width="120" height="50">
+										<rect width="20" height="50"></rect>
+										<rect width="80" height="50" x="20"></rect>
+										<rect width="20" height="50" x="100"></rect>
+									</svg>
+								</td>
+								<td>This is used to indicate where a pre-defined function is being used. </td>
+							</tr>
+							<tr>
+								<td>
+									<svg width="100" height="50">
+										<rect width="100" height="50" rx="20" ry="20" />
+										Sorry, your browser does not support inline SVG.
+									</svg>
+								</td>
+								<td>This is used to indicate a loop.</td>
+							</tr>
+						</tbody>
+					</table>
+					<p>A structure diagram must be read top to bottom, and left to right. So the order of the processes is important. Let's look at an example;</p>
+					<img src="..images/n5_structure_diagram_01.png" />
 					<h3>Wireframe</h3>
 					<p>Wireframes are used to show how the program will look in terms of its layout and features. However, since Python, at the level we learn, does not have a user interface for the programs we make. That being said, we still need to know how to design a user interface for a piece of software.</p>
 					<p>Consider this checklist when creating a wireframe:</p>

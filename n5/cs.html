@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Computing Science SQA - N5 Computer Systems</title>
+		<link rel="stylesheet" type="text/css" href="../style.css">
+		<link rel="stylesheet" type="text/css" href="../prism.css">
+		<script src="../prism.js"></script>
+		<script src="js_n5.js"></script>
+		<link rel="icon" href="../images/favicon.png">
+	</head>
+	<body class="line-numbers">
+		<div class="body">
+			<div class="heading">
+				<h1><a href="../index.html">SQA National 5 Computing Science</a></h1>
+			</div>
+			<div class="level">
+				<div class="leveltab">
+					<button class="leveltablinks active" onclick="openTab('../n5/n5_index.html')" >National 5</button>
+					<button class="leveltablinks" onclick="openTab('../higher/h_index.html')">Higher</button>
+					<button class="leveltablinks" onclick="openTab('../ah/ah_index.html')">Advanced Higher</button>
+				</div>
+			</div>
+			<div class="main">
+				<div class="tab">
+					<button class="tablinks" onclick="openTab('n5_index.html')" >Home</button>
+					<button class="tablinks" onclick="openTab('sdd.html')">1. SDD</button>
+					<button class="tablinks" onclick="openTab('wdd.html')">2. WDD</button>
+					<button class="tablinks" onclick="openTab('ddd.html')">3. DDD</button>
+					<button class="tablinks active" onclick="openTab('cs.html')">4. CS</button>
+					<button class="tablinks" onclick="openTab('pastpapers.html')">Past Papers</button>
+				</div>
+				<div class="subtab">
+					<button class="subtablinks" onclick="openSubTab(event, 'DataRep')">Data Representation</button>
+					<button class="subtablinks" onclick="openSubTab(event, 'CompStructure')">Computer Structure</button>
+					<button class="subtablinks" onclick="openSubTab(event, 'EnvironmentalImpact')">Environmental Impact</button>
+					<button class="subtablinks" onclick="openSubTab(event, 'Security')">Security</button>
+				</div>
+				<div id="Intro" class="tabcontent">
+					<h2>Intro to Computer Systems</h2>
+					<p>Computer Systems is all theory based content. There are 4 sub-topics;</p>
+					<ul>
+						<li>Data Representation</li>
+						<li>Computer Structure</li>
+						<li>Environmental Impact</li>
+						<li>Security</li>
+					</ul>
+					<p>You will cover binary conversion, how factors affect a systems performance, understanding of the impact intelligent systems can have on environment and the risks and precautions that affect computer systems.</p>
+				</div>
+				
+				<div id="DataRep" class="tabcontent" style="display:none">
+					<h2>Data Representation</h2>
+					<img class="sub-topic-icon" src="../images/data_rep_icon.png">
+					<p>Computers store all data as a series of 1's and 0's called <i>Binary</i>. This is because a computers processor is only capable of processing 1's and 0's, or On or Off.</p>
+					<p>1 = On, and 0 = Off.</p>
+					<p>Us humans use the denary (otherwise known as decimal) system in which we have 10 numbers to use; 0, 1, 2, 3, 4, 5, 6, 7, 8, 9.
+					To use and understand binary we must know how the binary system works.</p>
+					<table id="binary_table">
+						<tr class="top" cellpadding="1">
+							<td>128</td>
+							<td>64</td>
+							<td>32</td>
+							<td>16</td>
+							<td>8</td>
+							<td>4</td>
+							<td>2</td>
+							<td>1</td>
+							<td>Denary</td>
+						</tr>
+						<tr>
+							<td>0</td>
+							<td>0</td>
+							<td>0</td>
+							<td>0</td>
+							<td>0</td>
+							<td>0</td>
+							<td>0</td>
+							<td>0</td>
+							<td>Binary</td>
+						</tr>
+					</table>
+					<p>From the table above you can see that the denary numbers double each time as they move from left to right. This can continue so we can have larger numbers, for now we will stick to 8-bit numbers</p>
+					<h3>Positive Numbers</h3>
+					<p>To represent a positive number in binary we must understand how a binary sequence works.</p>
+					<p>01010100</p>
+					<p>The above binary is the number 84, but how?</p>
+					<p>We take each binary digit starting from left to right and above each digit put a number above it - the value of the number is always double of the number to its left.</p>
+					<img class="img_corner" src="../images/binary to denary.gif">
+					<p>As you can see, we have a 1 under the following values; 64, 16, and 4. Adding these numbers together we get 84</p>
+					<h1>Interactive Binary</h1>
+					<p>Enter either a 1 or a 0 into the box to see what the denary is:</p>
+					<table class="binary_table">
+						<tr class="top" cellpadding="1">
+							<td class="binary_table_top" id="value8">128</td>
+							<td class="binary_table_top" id="value7">64</td>
+							<td class="binary_table_top" id="value6">32</td>
+							<td class="binary_table_top" id="value5">16</td>
+							<td class="binary_table_top" id="value4">8</td>
+							<td class="binary_table_top" id="value3">4</td>
+							<td class="binary_table_top" id="value2">2</td>
+							<td class="binary_table_top" id="value1">1</td>
+						</tr>
+						<tr>
+							<td class="binary_table_bottom"><input id="bit8" placeholder="0" maxlength="1" oninput="checkDigit();"></td>
+							<td class="binary_table_bottom"><input id="bit7" placeholder="0" maxlength="1" oninput="checkDigit();"></td>
+							<td class="binary_table_bottom"><input id="bit6" placeholder="0" maxlength="1" oninput="checkDigit();"></td>
+							<td class="binary_table_bottom"><input id="bit5" placeholder="0" maxlength="1" oninput="checkDigit();"></td>
+							<td class="binary_table_bottom"><input id="bit4" placeholder="0" maxlength="1" oninput="checkDigit();"></td>
+							<td class="binary_table_bottom"><input id="bit3" placeholder="0" maxlength="1" oninput="checkDigit();"></td>
+							<td class="binary_table_bottom"><input id="bit2" placeholder="0" maxlength="1" oninput="checkDigit();"></td>
+							<td class="binary_table_bottom"><input id="bit1" placeholder="0" maxlength="1" oninput="checkDigit();"></td>
+						</tr>
+					</table>
+					<p id="total">Total: 0</p>
+					<p id="sum">0</p>
+					<div id="floatingPoint">
+						<h3>Floating Point Representation</h3>
+						<p>At some point we need to store numbers that include a decimal. Just like in Physics and Maths, we learn about scientific notiation where we take a very large number or a very small number
+							with a decimal point and use standard form to write them out.</p>
+						<p>We use the same format in computing science; we call this "floating point representation". Floating point representation is broken into 3 parts; sign, mantissa and exponent.</p>
+						<p>Lets look at an example. If we needed to write 13.5 using float point representation we would have to do the following:</p>
+						<ol>
+							<li>Count how many times we need to move the decimal so that it is before the first whole number: This would be 2. Since we moved the decimal 2 places to the left, the exponent is 2, or in 8 bit binary, 0000 0010.</li>
+							<li>Now we are left with .135, of which we need to convert to binary. 135 in 8 bit binary is 1000 0111, but the mantissa might be asked to be written in 16 bit (1 bit for the sign)</li>
+							<li>Expand mantissa to 16bit (1 bit for sign) so we add in 0's to the right 1000 0111 0000 000</li>
+							<li>Finally, we need to determine the sign bit, this part is easy. If the decimal was moved to the left, then the sign is positive and therefore 0. If the decimal was moved to the right, then the sign is negative and therefore 1.</li>
+						</ol>
+					<table class="floating_point">
+						<tr>
+							<th>Sign (1 bit)</th>
+							<th>Mantissa (15 bit)</th>
+							<th>Exponent (8 bit)</th>
+						</tr>
+						<tr>
+							<td>0</td>
+							<td>1000 0111 0000 000</td>
+							<td>0000 0010</td>
+						</tr>
+					</table>
+					</div>
+					<div id="twosComplement">
+						<h3>Two's Complement</h3>
+						<p>Two's Completement is how we represent negative numbers using binary.</p>
+						<p>Lets look at an example. If we needed to write -20 using Two's Complement we would have to do the following:</p>
+						<p>1. Write 20 in 8 bit binary:<br></p>
+						<p>0001 0100</p>
+						<p>2. Starting from the right, find the first bit that is a 1.</p>
+						<p>0001 0<u>1</u>00</p>
+						<p>3. Now, every bit after this bit will be inverted;</p>
+						<p>1110 1100</p>
+						<video class="img_corner" autoplay muted>
+							<source src="../images/twos complement.webm" type="video/webm">
+							Your browser does not support the video tag.
+						</video>
+					</div>
+					<div id="ascii">
+						<h3>Storing Text / Extended ASCII </h3>
+						<img class="sub-topic-icon" src="../images/ascii_icon.png">
+						<p>Text also needs to be represented in computer systems using the binary system, however there is a middle ground where the binary for each printable character (and non-printable characters)
+						will be assigned a numerical/denary value of which we then get the binary value.</p>
+						<p>The the system that is used world wide to represent text is called ASCII (American Standard Code Information Interchange). We use Extended ASCII to represent text as it uses 8 bit binary allowing us to use
+						a total of 256 different codes. These codes are then used to represent the characters.</p>
+						<p>There are printable characters, and non printable characters. There are 32 non-printable characters, which are called 'control characters' and these are keys on a keyboard that do not print anything on the screen
+						such as "Enter", "CTRL", "SHIFT", the arrow keys and more. The other printable characters are the Alphabet in both lowercase and uppercase, symbols, and numbers. Here are some examples:</p>
+						<table id="ascii_table">
+							<tr>
+								<th>Extended ASCII</th>
+								<th>Denary Equivalent</th>
+								<th>Character</th>
+							</tr>
+								<td>01000001</td>
+								<td>65</td>
+								<td>A</td>
+							<tr>
+								<td>01000010</td>
+								<td>66</td>
+								<td>B</td>
+							</tr>
+							<tr>
+								<td>01000011</td>
+								<td>67</td>
+								<td>C</td>
+							</tr>
+							<tr>
+								<td>00011011</td>
+								<td>27</td>
+								<td>ESCAPE</td>
+							</tr>
+							<tr>
+								<td>00100000</td>
+								<td>32</td>
+								<td>SPACE</td>
+							</tr>
+							<tr>
+								<td>001000001</td>
+								<td>33</td>
+								<td>!</td>
+							</tr>
+						</table>
+					</div>
+					
+					<div id="graphics">
+						<h2>Storing Graphics</h2>
+						<h3>Vector Images</h3>
+						<p>Vector images are stored by layering shapes on top of eachother. These shapes are stored as a list attributes including coordinates, type of shape, start position, size, colour or pattern of its fill and outline and more.</p>
+						<p>These attributes are read and translated into bitmap images on the screen.</p>
+<pre><code class="language-markup">&lt;rect x="1" y="1" width="250" height="100" style="fill:#0cf; stroke-width:2; stroke:#000"&gt;
+</code></pre>
+						<svg width="255" height="105" style="display:block">
+							<rect x="1" y="1" width="250" height="100" style="fill:#0cf; stroke-width:2; stroke:#000"/>
+						</svg>
+						<p>Important notes:</p>
+						<ul>
+							<li>Small file size (unless highly complex shapes and high number of layers)</li>
+							<li>Resolution independant so they can be scaled without losing quality</li>
+							<li>Can be edited an unlimited amount of times without impacting image quality</li>
+							<li>Cannot be used for photographs/life like images</li>
+						</ul>
+						
+						<h3>Bitmap Graphics</h3>
+						<p>Bitmapped graphics are made up using pixels. Each pixel is given a location and colour - if the bitmap is using 8bit colour then the each pixel can be 1 of 256 colours - which is not enough to accurately represent colour that we see.
+						So increasing the bits to 24 now gives each pixel the ability to be 1 of 16~ million different colours.</p>
+						<p>If we break down the word <i>bitmap</i>, we have bit and map. Essentially a bitmap is a <i>map</i> of <i>bits</i> - lets look at the image example below</p>
+						<img src="../images/bitmap_image.png">
+						<p>If we imagine that each bitmap image is simply a grid of pixels, and each pixel is given a binary number based on what colour that pixel should be, we can see this in the image above.
+						Starting at the top left and working our way down to the bottom right, each pixel is told what to do - in this example, the pixels are told to be either on or off (1 = On, 0 = Off). Which gives
+						us a very simple, 1 bit image.</p>
+						<p>Lets increase the number of pixels as well as the number of colours each pixel can be:</p>
+						<img src="../images/pikachu bitmap grid.png" />
+						<p>Important notes:</p>
+						<ul>
+							<li>Perfect for capturing photographs</li>
+							<li>Resoultion dependant meaning once the image is created, its resolution is set</li>
+							<li>Large file size since all pixels colour depth are stored (no compression)</li>
+							<li>Can be compressed using lossy or lossless codec reducing file size</li>
+						</ul>
+						
+						<p>Photographs benefit from as high resolution as possible. Click on the 3 different resolutions to see how it affects the image.</p>
+						<p onclick="document.getElementById('tree').src='../images/tree_1.jpg'">512x512</p>
+						<p onclick="document.getElementById('tree').src='../images/tree_2.jpg'">256x256</p>
+						<p onclick="document.getElementById('tree').src='../images/tree_3.jpg'">128x128</p>
+						<img id="tree" src="../images/tree_1.jpg" width="512" height="512" />
+					</div>
+				</div>
+				
+				<div id="CompStructure" class="tabcontent" style="display:none">
+					<h2>Computer Structure</h2>
+					<h3>The Processor</h3>
+					<img class="sub-topic-icon" src="../images/processor_icon.png">
+					<p>The processor is the brains of the computer. It does all the moving and processing of data, and does this at rates of millions of instructions
+						per second. The clock speed is measured in Hertz (Hz) and is a good indication of how quickly the processor can complete tasks. Modern processors for desktop PC’s operate in GHz.<br></p>
+					<p>It is made up of 3 important components;</p>
+					<ol>
+						<li>Control Unit</li>
+						<li>Arithmetic and Logic Unit</li>
+						<li>Registers</li>
+					</ol>
+					<p><u>Arithmetic and Logic Unit</u></p>
+					<p>The Arithmetic and Logic unit (ALU) is the part of the processor that deals with all of the calculations. Example: total = cost * quantity. It also
+						deals with all of the logical operations too, for example IF age > 17 THEN</p>
+					<p><u>Control Unit</u></p>
+					<p>The Control Unit (CU) is the part of the processor that performs a number of functions. One of the many functions is to decode and execute the instructions, another is to
+						is to keep the components in time with each other using the clock line. The Control Unit also initiates the memory accesses using the read or write line.</p>
+					<p><u>Registers</u></p>
+					<p>The Registers are storage locations that are located ON the processor itself. They are used to:
+						<ul>
+							<li>store data that is being transferred to or from memory</li>
+							<li>hold the address of the location in memory which the processor is accessing to read or write data</li>
+							<li>hold the instructions that are being carried out</li>
+						</ul>
+					</p>
+					
+					<h3>Computer Memory</h3>
+					<img class="sub-topic-icon" src="../images/ram_icon.png">
+					<p>Main Memory in a computer is either RAM or ROM. RAM (Random Access Memory) is where programs and data is held when they are in use by the computer. ROM (Read Only Memory)
+						is system memory that is used to store vital information such as start up instructions. This data can not be edited or deleted and is not lost when the power is off.</p>
+					<u>RAM</u>
+					<ul>
+						<li>The processor can write to, or read from the RAM at high speed</li>
+						<li>Data held in RAM can be changed</li>
+						<li>All data in RAM is lost when the power is switched off</li>
+						<li>RAM holds all the data for files and programs currently being used</li>
+						<li>Each memory location in RAM has its own unique address</li>
+					</ul>
+					<u>ROM</u>
+					<ul>
+						<li>Data is stored pernamently in ROM - it is not lost when the power is switched off</li>
+						<li>Data in ROM can not be changed</li>
+						<li>ROM holds vital system information</li>
+					</ul>
+					<h3>Buses</h3>
+					<p>Buses are a series of lines that connect the processor to other parts of computer architecure (cache memory, main memory) and they transmit data between these parts. There are 2 buses; Data Bus and Address Bus</p>
+					<u>Data Bus</u>
+					<p>The Data Bus is used to transfer data to and from main memory to the processor. The data bus is <b>bi-directional</b>, meaning it can transfer data both ways.</p>
+					<u>Address Bus</u>
+					<p>The Address Bus simply carries the address of the memory location of the data that is either being read from or written to in main memory. The Address Bus is uni-directional, meaning it can only travel in one direction; from CPU to the main memory.</p>
+					<p>The Buses in a computer can determine how efficiently it can run; the width of the bus impacts how much data can be transferred at a time. For example; a 32bit bus will be able to transfer 32bits at once, increasing the width will increase the efficiency and performance of the computer.</p>
+					
+					<h3>Machine Code</h3>
+					<p>At this point we should know that computers only understand 1's and 0's (Binary). However, it is very difficult for humans to read and write instructions in Binary so we use High Level Languages such as Python, Visual Basic, C++ etc. These High Level Languages then need to be translated into machine code so that the computer/processor can execute the instructions.</p>
+					<h3>Translators</h3>
+					<p>As previously discussed, we need to translate our high level language code into machine code so that the computer can execute the instructions we give it.</p>
+					<p>There are 2 different types of translators that you need to know about:</p>
+					<ul>
+						<li>Interpreter</li>
+						<li>Compiler</li>
+					</ul>
+					<p>Each have their own advantages and disadvantages</p>
+					<u>Interpreter</u>
+					<p>An interpreter will translate the code line by line. It does not produce object code, which is a saved version of the program in machine code. Instead it will translate and execute it each line in the program everytime the program is run.</p>
+					<u>Compiler</u>
+					<p>A compiler will take the whole program, translate it into machine code, object code. This is done line by line, and then creates a file with the translated code. The machine code can then be executed.</p>
+				</div>
+				
+				<div id="EnvironmentalImpact" class="tabcontent" style="display:none">
+					<h2>Environmental Impact</h2>
+					<img class="sub-topic-icon" src="../images/environmental_impact_icon.png">
+					<p>Computers have a big impact on the environment due to the energy used to produce and run the every incresing number of computer systems comes from non-renewable energy sources.</p>
+					<p>We can change a few settings and adjust the way we use computer systems to reduce the amount of energy consumed;</p>
+					<ul>
+						<li>Reduce brightness on monitors</li>
+						<li>Powerdown settings - computers can turn off automatically at a scheduled time, this is useful in workplaces where workers might all leave at the end of the day and this ensures all computers are not left on</li>
+						<li>Leaving computers on standby if the computer is to be used later on. On standby a computer will use up to 10x less power when in standby mode</li>
+					</ul>
+					<p>Computer systems are a huge source of emissions and have a huge impact on the environment. However, they are increasingly being used to save energy by controlling our environment.</p>
+					
+					<h3>Heating Systems</h3>
+					<img class="sub-topic-icon" src="../images/heating_system_icon.png">
+					<p>Technology can be used to monitor and adjust heating systems based on data collected so that the heating can be turned on and off at the most efficient times.
+					Intelligent Heating Systems will collect data and monitor temperatures to make decisions on where to turn on and shut off the heating systems, saving money and most importantly, energy.</p>
+					<p>These systems can also monitor the activity of rooms and determine when certain rooms should be heated. Another instance of intelligent heating systems is the ability for the heating system to turn
+					on when a room is booked out, so it can know when people are scheduled to be in a particular room and when the room will also be likely be vacant.</p>
+					
+					<h3>Traffic Control</h3>
+					<img class="sub-topic-icon" src="../images/traffic_management_icon.png">
+					<p>Another situation where technology and intelligent systems can be used is for traffic management. Vehicles of all shapes and sizes are more efficient when they are travelling. Once they start breaking, accelerating or 
+					are stationary (with the engine running), they are produce more emissions. </p><p>By analysing the times when there is a lot more traffic and from where this influx of traffic comes from,
+					the system can change the timing of traffic lights to allow more cars through a certain route to ensure there are less cars stuck in traffic, which inturn reduces the amount of cars that are stationary, and therefore 
+					reducing emissions.</p>
+					<p>Modern satellite navigation systems can warn drivers of potential congestion and suggest alternative routes - again, reducing the potential for cars to sit stationary and reducing the emissions.</p>
+					
+					<h3>Car Management Systems</h3>
+					<img class="sub-topic-icon" src="../images/smart_car_icon.png">
+					<p>The majority of modern cars are fitted with an engine management system. This management system, along with hundreds of sensors, can process 1000's of readings a second and make small adjustments to the engine to improve
+					efficiency, which in turn, reduces the emissions produced.</p>
+					<p>Start/Stop systems are designed to switch the cars engine off when stationary at a set of traffic lights, or just parked up. Having the engine off for a matter of seconds to minutes can save the amount of emissions produced
+					and therefore improving the efficiency of the car. Multiplying this to the hundreds of millions of car across the planet can add up to a significant amount of emissions and carbon dioxide reduced.
+					When the driver wants to move again, they press the accelerator pedal and the car will restart automaticaly.</p>
+				</div>
+				
+				<div id="Security" class="tabcontent" style="display:none">
+					<h2>Security Risks and Precautions</h2>
+					<h3>Firewalls</h3>
+					<img class="sub-topic-icon" src="../images/firewall_icon.png">
+					<p>A firewall is designed to check all incoming and outgoing data of a computer system. The firewall decides which packets of data of allowed to reach their desintation address.</p>
+					<p>A firewalla can be installed on;</p>
+					<ul>
+						<li>an individual machine</li>
+						<li>servers on a network</li>
+					</ul>
+					<p>A firewall's purpose is to prevent unauthorised access to a network, otherwise known as hacking - it will not prevent viruses, trojans or malware.</p>
+					<h3>Encryption</h3>
+					<img class="sub-topic-icon" src="../images/encryption_icon.png">
+					<p>Encryption is a way of scrambling information so that it is unreadable to those who are not authorised to read the information.
+					Encryption is essential and without it we wouldn't be able to log into our banks, having online shopping or communicate without someone else being able to see our password, sensitive date and messages.</p>
+					<p>Higher: Asymetric Encryption.</p>
+					<video class="img_corner" controls>
+						<source src="../images/asymetric encryption.webm" type="video/webm">
+						Your browser does not support the video tag.
+					</video>
+					<p>In Asymetric Encryption, everyone on the internet has their own public and private key pair that are mathematically linked. The public key can be used by anyone to encrypt information
+					but the private key is only known and held by the recipient. Once the sender has sent their information that was encrypted using the public key, the recipient then uses their priate key to decrypt the information.</p>
+					<p>It is not possible to figure out the private key by using the public key.</p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

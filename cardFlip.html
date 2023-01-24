@@ -1,0 +1,77 @@
+<html>
+	<head>
+		<script>
+			function flip(event){
+				var element = event.currentTarget;
+				if (element.className === "card") {
+				if(element.style.transform == "rotateY(180deg)") {
+				  element.style.transform = "rotateY(0deg)";
+				}
+				else {
+				  element.style.transform = "rotateY(180deg)";
+				}
+			  }
+			};
+
+		</script>
+		<style>
+			div {
+			  height: 100%;
+			}
+
+			.container {
+				border-radius:5px;
+				box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+				width:300px;
+				height:432px;
+				padding:5px;
+				text-align:center;
+				margin-bottom:20px;
+			}
+
+			.card {
+			  transition: transform 0.5s;
+			  transform-style: preserve-3d;
+			  cursor: pointer;
+			}
+
+			.front, .back {
+			  position: absolute;
+			  display: flex;
+			  flex-direction: column;
+			  justify-content: center;
+			  align-items: center;
+			  backface-visibility: hidden;
+			}
+
+			.back {
+				overflow-wrap: break-word;
+				text-align:left;
+				transform: rotateY(180deg);
+			}
+
+		</style>
+	</head>
+	<body>
+		<div class="container">
+		  <div class="card" onclick="flip(event)">
+			<div class="front">
+				<p class="js_example_title">Image Change</p>
+				<p>We can change an image when we move our mouse over it, and then return the image back to the original when the mouse moves off the image.</p>
+				<img id="imgChange" src="../images/js_imgA.jpg" onmouseover="imgB()" onmouseout="imgA()"/>
+			</div>
+			<div class="back">
+				<p class="js_example_title">Image Change - Code</p>
+				<p>function imgA(){
+					&#09;document.getElementById("imgChange").src = "../images/js_imgA.jpg";
+				}</p>
+						
+				<p>function imgB(){
+					document.getElementById("imgChange").src = "../images/js_imgB.jpg";
+				}
+				</p>
+			</div>
+		  </div>
+		</div>
+	</body>
+</html>

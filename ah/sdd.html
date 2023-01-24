@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Computing Science SQA - Higher Software Design and Development</title>
+		<link rel="stylesheet" type="text/css" href="../style.css">
+		<link rel="stylesheet" type="text/css" href="../prism.css">
+		<script src="../prism.js"></script>
+		<script src="js_advancedhigher.js"></script>
+		<link rel="icon" href="../images/favicon.png">
+		<meta name="viewport" content="width=device-width">
+	</head>
+	<body class="line-numbers">
+		<div class="body">
+			<div class="heading">
+				<h1><a href="../index.html">SQA Advanced Higher Computing Science</a></h1>
+			</div>
+			<div class="level">
+				<div class="leveltab">
+					<button class="leveltablinks" onclick="openTab('../n5/n5_index.html')" >National 5</button>
+					<button class="leveltablinks" onclick="openTab('../higher/h_index.html')">Higher</button>
+					<button class="leveltablinks active" onclick="openTab('ah/ah_index.html')">Advanced Higher</button>
+				</div>
+			</div>
+			<div class="main">
+				<div class="tab">
+					<button class="tablinks" onclick="openTab('ah_index.html')" >Home</button>
+					<button class="tablinks active" onclick="openTab('sdd.html')">1. SDD</button>
+					<button class="tablinks" onclick="openTab('wdd.html')">2. WDD</button>
+					<button class="tablinks" onclick="openTab('ddd.html')">3. DDD</button>
+					<button class="tablinks" onclick="openTab('cs.html')">4. CS</button>
+					<button id="buttonR" class="tablinks" onclick="openTab('pastpapers.html')">Past Papers</button>
+				</div>
+				<div class="subtab">
+					<button class="subtablinks" onclick="openSubTab(event, 'Analysis')">Analysis</button>
+					<button class="subtablinks" onclick="openSubTab(event, 'Design')">Design</button>
+					<button class="subtablinks" onclick="openSubTab(event, 'Implementation')">Implementation</button>
+					<button class="subtablinks" onclick="openSubTab(event, 'Testing')">Testing</button>
+					<button class="subtablinks" onclick="openSubTab(event, 'Evaluation')">Evaluation</button>
+				</div>
+				<div id="Intro" class="tabcontent">
+					<h2>Intro to Python</h2>
+					<p>Python is a high level programming language. The language is designed to be readable and is used across many large tech companies such as YouTube, Google, NASA etc.</p>
+					<p>You can download Python IDLE (Integrated Development and Learning Environment) from the official <a href="https://www.python.org/">Python Website.</a></p>
+					<p>Other Python Resources:</p>
+						<ul>
+							<li><a href="https://docs.python.org/3/">Python Documentation</a> <img src="../images/py.png"/></li>
+							<li><a href="https://pythonbasics.org/">Python Basics</a> <img src="../images/py.png"/></li>
+							<li><a href="https://youtube.com/channel/UCX4LabLfay8sZhd_zBDDn8w">Python YouTube Videos</a> <img src="../images/youtube.ico"/></li>
+							<li><a href="https://www.reddit.com/r/python">Python Sub-Reddit</a> <img src="../images/reddit.png"/></li>
+						</ul>
+				</div>
+				<div id="Analysis" class="tabcontent" style="display:none">
+					<h2>Analysis</h2>
+					<p>At Advanced Higher you will be expected to analyse the purpose and functional requirements of a problem.</p>
+					<h3>Purpose, Scope and Boundaries</h3>
+					<p><b>Purpose</b>: This is a general overview of what the software should do, what is its purpose?</p>
+					<p><b>Scope</b>: This is a list of all the deliverables of the software upon completion. This list includes; proposed design, completed software, testing conducted and the results, and an evaluation report.</p>
+					<p><b>Boundaries</b>: This is the used to define the limits of the program; what it can and can not do. It will also detail any assumptions made by the developers on the client's behalf regarding the requirements.</p>
+					<h3>Feasibility Study</h3>
+					<p>Feasibility study is conducted to investigate any issues regarding the development of the project and whether the developer should proceed with the project given the investigations outcome.</p>
+					<p>The feasibility study will look into the following areas;</p>
+					<ul>
+						<li>Economic</li>
+						<li>Time</li>
+						<li>Legal</li>
+						<li>Technical</li>
+					</ul>
+					<h4>Economic Feasibility</h4>
+					<p>Economic feasibility looks into whether the project would be economically viable for the company to proceed with. A Cost-Benefit-Analysis is a systematic process for calculating and comparing benefits and costs of a project.</p>
+					<p>Ultimately the company/developer will be conducting this analysis to determine whether the project is a sound investment and also to use as a basis to compare future projects.</p>
+					<h4>Time Feasibility</h4>
+					<p>This area looks at whether the project can be developed in a reasonable time and if the desired completion date is also reasonable.</p>
+					<h4>Legal Feasibility</h4>
+					<p>When developing software there are legal implication that can affect whether a project is legally feasible. The proposed software system must comply with current laws relevant to the country the software would operate in.</p>
+					<ul>
+						<li>GDPR</li>
+						<li>Copyright Designs and Patents Act</li>
+						<li>Computer Misuse Act</li>
+					</ul>
+					<h4>Technical Feasibility</h4>
+					<p>This area looks at whether the current hardware and software capabilities are suitable for the proposed project, and if acceptable performance and implementation be expected.</p>
+					<p>An example of technical feasibility study would be the rise of mobile phones along with the differing screen sizes/resolutions and hardware.</p>
+					
+					<h3>User Surveys</h3>
+					<p></p>
+				</div>
+				
+				<div id="Design" class="tabcontent" style="display:none">
+					<h2>Design</h2>
+					<p>The Design phase will see you learning about UML diagrams, Gantt Charts and .</p>
+				</div>
+				
+				<div id="Implementation" class="tabcontent" style="display:none">
+					<div>
+						<h2>Implementation</h2>
+					</div>
+					<div class="subtabSDD">
+						<button class="subtabSDD active" onclick="openSubTabSDD(event, 'DataTypes')">Data Types</button>
+						<button class="subtabSDD" onclick="openSubTabSDD(event, 'OOP')">Object Orientation</button>
+						<button class="subtabSDD" onclick="openSubTabSDD(event, 'DB')">Database </button>
+						<button class="subtabSDD" onclick="openSubTabSDD(event, 'Algorithms')">Algorithms</button>
+					</div>
+					<div id="DataTypes" class="SDDtabcontent">
+						<h2>Data Types and Structures</h2>
+						<h3>2D Arrays</h3>
+						<p>2D (2 Dimensional) Arrays are simply arrays within an array.</p>
+						<p>A 1D Array stores multiple pieces of the same kind of information in a single data object, and is created as such;</p>
+<pre><code class="language-py">color_array = ["Red","Blue","Orange","Purple"]</code></pre>
+						<p>A 2D Array will store arrays inside of a single array.</p>
+<pre><code class="language-py">cars = [["BMW","320d","Red"],["Audi","A3","Black"],["Ford","Fiesta","Silver"]]</code></pre>
+						<p>If we were to use a for loop to print the contents of the above 2D array we would get the following output;</p>
+<pre><code class="language-py">for i in range(0,len(cars)):
+	print(cars[i])
+
+>>['BMW', '320d', 'Red']
+>>['Audi', 'A3', 'Black']
+>>['Ford', 'Fiesta', 'Silver']</code></pre>
+						<p>2D Arrays are not particularly useful when it comes to storing multiple pieces of information about a subject and then having multiple instances of that subject. You should be comfortable with arrays (creating, adding data, removing data, printing contents) from Higher.</p>
+						<p>You will be expected to know how to;</p>
+						<ul>
+							<li>Traverse a 2D Array</li>
+							<li>Display contents of a 2D Array</li>
+							<li>Read a file into a 2D Array</li>
+							<li></li>
+						</ul>
+						<h3>Linked Lists</h3>
+						<p>Linked Lists is a dynamic data structure that stores items in nodes.</p>
+						<p>Although arrays can perform the same outcome as linked lists, it is important to know that arrays will make a copy of themselves when the size of the array changes, which has major implications for both memory and processor usage.</p>
+						<p>A linked list works by having 3 pieces of data; memory address, data, and next pointer.</p>
+						<p>The memory address is simply where this object is stored in memory, the data is the data being held, and the next pointer is an address of the next node (item) in the linked list. The start of a linked list is called the head, and the last node will point to null.</p>
+						<table>
+							<thead>
+								<tr>
+									<th colspan="2">memory address</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>data</td>
+									<td>next pointer</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					
+					<div id="OOP" class="SDDtabcontent" style="display:none">
+						<h2>Object Oriented Programming</h2>
+						<p></p>
+						<h3>Objects</h3>
+						<p></p>
+					</div>
+					
+					<div id="DB" class="SDDtabcontent" style="display:none">
+						<h2>Database Implementation</h2>
+						<p>Selection is where we give the computer a condition and it must work out if the condition is true or false, from this outcome we
+						can tell the computer to do x or y.</p>
+						<p>Let's consider the scenario where a teacher is entering grades into the computer and it must decide whether the person has passed or failed.</p>
+						<p>If a students achieves 40% or more on their test, they pass. If they achieve less than 40% then they fail.</p>
+<pre><code class="language-py">score = 67
+if score > 40:
+	print("Fail")
+else:
+	print("Pass")</code></pre>
+					<p>The outcome of the code above would be;</p>
+<pre><code class="language-py">>> Pass</code></pre>
+						<p>We can visualise the decision the computer needs to make by using a flowchart - the computer has two paths that it can go down
+						but can only go down one.</p>
+						<img src="../images/selection.png" />
+						<p>Sometimes there is a situation where there is more than one True or False situation. Consider the teacher entering grades secnario;
+						we have grades A, B, C, D, E, F and then Fail. We can ask the computer to choose a grade based on the inputted percentage.</p>
+						<p>This is where an <b>ELIF</b> condition is used. We start off with an IF, and then if that condition is False, it will move onto the next condition.
+						And then if that condition is False, it will move onto the next condition and so on.</p>
+<pre><code class="language-py">score = 56 
+if score >=90:
+	print ("A Grade") 
+	elif score >= 80:
+	print ("B Grade") 
+	elif score >= 70:
+	print ("C Grade") 
+	elif score >= 60:
+	print ("D Grade") 
+	elif score >= 50:
+	print ("E Grade")
+	elif score >= 40:
+	print("F Grade")
+else:
+	print("Fail")</code></pre>
+					</div>
+					
+					<div id="Algorithms" class="SDDtabcontent" style="display:none">
+						<h2>Standard Algorithms</h2>
+						<p>At N5 and Higher level we learned about a few standard algorithms; find min, find max, linear search and count occurences. It is wise to still know about these standard algorithms and be able to implement them, but you will also be expected to know and implement 3 new standard algorithms; bubble sort, insertion sort and binary search.</p>
+						<h3>Bubble Sort</h3>
+						<p>A bubble sort is used to order data from smallest to largest or vice versa. It does this by comparing 2 elements with eachother and swapping positions based on the comparison being made.</p>
+						<video controls>
+							<source src="../images/bubble_sort.webm" type="video/mp4">
+							Your browser does not support the video tag.
+						</video>
+						<p>The process is repeated until the data is in order. The process that are repeated can be broken down into 4 steps.</p>
+						<ol>
+							<li>Start loop for length of data/array</li>
+							<li>Start a seond loop for length of the data/array minus 1 and minus iteration number of the first loop</li>
+							<li>Compare the 1st item with the 2nd item</li>
+							<li>Swap if the comparison is true</li>
+						</ol>
+						<p>Lets look at an example of a bubble sort in Python;</p>
+<pre><code class="language-py">numbers = [3,6,8,2,3,5,1]
+
+for i in range(len(numbers)):
+	for j in range(0,len(numbers)-i -1):
+		if numbers[j] > numbers[j+1]:
+			temp = numbers[j]
+			numbers[j] = numbers[j+1]
+			numbers[j+1] = temp
+
+print(numbers)
+</code></pre>
+					</div>
+				</div>
+				<div id="Testing" class="tabcontent" style="display:none">
+					<h2>Testing</h2>
+					<p>It is important that you test your program for errors and bugs throughout the development process.</p>
+					<p>However, you will move onto a testing stage whereby you will be testing the code with a range of inputs to ensure that it works as expected. We will use test data and it can be split into 3 categories;</p>
+					<ul>
+						<li>Normal</li>
+						<li>Extreme</li>
+						<li>Exceptional</li>
+					</ul>
+					<p>Normal test data is as the name suggests; normal. This is the data that should be entered into the program for it serve its purpose. Let's take an example of a prgram that asks the user for a test score as a percentage. We know that the only acceptable scores in percentage format for a test is 0 to 100. Therefore, 1-99 can be considered normal test data.</p>
+					<p>Extreme test data is quite simple; for the example above, it would be 0 and 100. Extreme test data is such data that sits on the boundary of acceptable and not acceptable data. 0 and 100 are still valid numbers that can be entered but they are the boundary of what is acceptable and not.</p>
+					<p>Therefore, Exceptional test data is any data that should not be accepted by the program. Keeping with the example above, we can say that any number that is not 0 to 100 is execeptional. So, numbers like -10 and 125 are not acceptable numbers for a percentage when it comes to a test score.</p>
+					<h2>Errors</h2>
+					<p>Errors will always happen in programming. They are inevitable. That's why it is important to understand the types of errors and therefore, how to go about fixing them.</p>
+					<h3>Syntax Errors</h3>
+					<p>Syntax errors are ones that break the rules of the language you are coding in. There are set rules that must be followed in order for the code to work.</p>
+					<pre><code class="language-py">print "Hello"</code></pre>
+					<p>The print statement is a function and in Python it requires round brackets.</p>
+					<pre><code class="language-py">print ("Hello")</code></pre>
+					<p>The lack of brackets in the example above is considered a syntax error because it will 1. prevent the program from running, and 2. is a mistake whereby we have not followed the rules of the programming language.</p>
+					<h3>Logic Error</h3>
+					<p>A logic error is slightly more difficult to find and fix. It is an error that is caused by improper logic, of which the computer can not follow.</p>
+					<pre><code class="language-py">score = 89
+if score < 40 and > 100:
+print("You have passed")</code></pre>
+					<p>The above code reads as; if the score is less than 40 and greater than 100, then print the message "you have passed", but a single number cannot be both greater than 100 AND less than 40 at the same time. It is also logically incorrect as the pass percentage is greater than 40 and less than 100, which this if statement does not check correctly.</p>
+					<h3>Execution Error</h3>
+					<p>An execution error is when the code is running but then ecounters a error that causes it to stop working. One such example is the program trying to access the index of an array that doesn't exist.</p>
+					<pre><code class="language-py">scores = [78,54,87,95,23]
+for i in range(0,6):
+	print(scores[i])</code></pre>
+					<p>It might not be immediately obvious, but the array we setup called scores contains 5 scores. The index values for these 5 scores is 0, 1, 2, 3, and 4. We then use a for loop to print the individual array values using the index number to access each position.</p>
+					<p>However, the loop is set to run from 0 to 6 (which will run 6 times) and there is only 5 items in the array, so when it gets to the 6th loop, it will try to access the 6th position in the array which, as we know, doesn't exist.</p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

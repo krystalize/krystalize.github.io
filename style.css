@@ -1,0 +1,518 @@
+/* CSS */
+
+html {
+	overflow-y: scroll;
+}
+
+body{
+	background-color:#4b8bbe;
+	color:white;
+	font-family:verdana;
+	margin:0px;
+}
+
+p,ul,ol{
+	font-size:18px;
+	line-height:1.7;
+}
+
+hr{
+	border: 1px solid #4b8bbe;
+}
+
+li{
+    padding: 0.1em;
+}
+
+h2 {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+h3 {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+h4{
+	display: flex;
+    width: 100%;
+    justify-content: left;
+    align-items: left;
+    text-align: left;
+	font-size:17px;
+}
+
+h2:before,
+h2:after {
+    content: '';
+    border-top: 2px solid;
+    margin: 0 20px 0 0;
+    flex: 1 0 20px;
+}
+
+h2:after {
+    margin: 0 0 0 20px;
+}
+
+h3:before,
+h3:after {
+    content: '';
+    border-top: 3px dotted;
+    margin: 0 20px 0 0;
+    flex: 1 0 20px;
+}
+
+h3:after {
+    margin: 0 0 0 20px;
+}
+
+
+.tabcontent a, .tabcontent a:visited{
+	color:#4b8bbe;
+	font-weight:bold;
+}
+
+h1 a:visited{
+	color:white;
+}
+
+#ppLink{
+	color:red;
+}
+
+.img_icons{
+	float:left;
+	margin-right:20px;
+	margin-bottom:5px;
+}
+
+.body{
+	min-width:600px;
+	padding:5px;
+	width:1036px;
+	margin:0 auto;
+}
+
+.HTMLoutput{
+	background: #272822;
+	padding: 1em;
+	border-radius: 0.3em;
+	white-space: normal;
+	color:white;
+}
+
+.heading{
+	min-width: 700px;
+	text-align:center;
+	background-color:#646464;
+	background-image:url("images/header-bg.png");
+	height:90px;
+	margin-bottom:10px;
+	border: 1px solid #ccc;
+	padding-top:10px;
+}
+
+.main{
+	clear:both;
+}
+
+.level{
+	margin-bottom:10px;
+}
+
+/* Style the tab */
+.tab, .level {
+	overflow: hidden;
+	border: 1px solid #ccc;
+	background-color: black;
+	padding: 1px;
+}
+
+.subtab {
+	overflow: hidden;
+	border: 1px solid #ccc;
+	background-color: black;
+	padding: 1px;
+}
+
+.subtabWDD, .subtabSDD{
+	margin: auto;
+	padding: 1px;
+	display: inline-block;
+}
+
+.subtabWDD{
+	display:flex;
+	justify-content:center;
+}
+
+/* Style the buttons inside the tab */
+.level .leveltab button {
+	background-color:#646464;
+	float:left;
+	border:none;
+	cursor:pointer;
+	padding:14px 16px;
+	transition:0.3s;
+	font-size:19px;
+	color:white;
+	width:342px;
+	min-width:70px;
+	margin:1px;
+}
+
+.tab button {
+	background-color:#646464;
+	float:left;
+	border:none;
+	cursor:pointer;
+	padding:14px 16px;
+	transition:0.3s;
+	font-size:19px;
+	color:white;
+	width:170px;
+	min-width:70px;
+	margin-left:1px;
+	margin-right:1px;
+}
+
+.subtab button, .subtabWDD button {
+	background-color:#646464;
+	float:left;
+	border:none;
+	cursor:pointer;
+	padding:4px 8px;
+	transition:0.3s;
+	font-size:15px;
+	color:white;
+	width:170px;
+	min-width:70px;
+	margin-left:1px;
+	margin-right:1px;
+}
+
+.subtabSDD button {
+	background-color:#646464;
+	float:left;
+	border:none;
+	cursor:pointer;
+	padding:4px 8px;
+	transition:0.3s;
+	font-size:15px;
+	color:white;
+	width:164px;
+	min-width:70px;
+	margin-left:1px;
+	margin-right:1px;
+}
+
+.subtab .active, .subtabWDD .active, .subtabSDD .active, .level .leveltab .active{
+	background-color:#FFD43B;
+	transition:0.3s;
+	color:black;
+
+}
+.tab .active {
+	background-color:#FFD43B;
+	transition:0.3s;
+	color:black;
+
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover, .subtab button:hover, .subtabWDD button:hover, .subtabSDD button:hover, .leveltab button:hover {
+  background-color: #FFD43B;
+}
+
+
+/* Style the tab content */
+.tabcontent {
+	margin-top:10px;
+	display: block;
+	padding: 6px 15px;
+	border: 1px solid #ccc;
+	background-color:white;
+	color:black;
+}
+
+/* Table Styling */
+.pastPaperTable{
+	border-collapse: collapse;
+	width: 100%;
+}
+
+.web_table, .html_table_body, .data_type_table, .flowchart_table, .css_table1_{
+	margin:auto;
+	width: 70%;
+	background-color:black;
+}
+
+.flowchart_table .symbolCol{
+	width:25%;
+}
+
+.css_table1_, .css_table2_, .html_table_{
+	cursor:pointer;
+}
+
+.tag-def{
+	width:70%;
+	text-align:left;
+}
+.tag-css{
+	width:70%;
+	text-align:left;
+}
+
+th, td{
+  text-align: center;
+  padding: 8px;
+  color: black;
+}
+
+th{
+  background-color: #FFD43B;
+  color: black;
+}
+
+td{
+	background-color:white;
+}
+
+.binary_table_bottom,.binary_table_top,input{
+	font-family:verdana;
+	font-size:20px;
+	border:none;
+	text-align:center;
+}
+
+#binary_table{
+	text-align:center;
+	font-family:verdana;
+	font-size:20px;
+}
+
+#css_example_table{
+	font-family:verdana;
+	margin:auto;
+}
+
+#css_example_table td{
+	width:auto;
+	text-align:left;
+}
+
+.floating_point, #ascii_table{
+	white-space:nowrap;
+	background-color:black;
+}
+
+input:focus{
+	outline:none;
+}
+
+td, .top, input {
+  border-collapse: collapse;
+  width:50px;
+  text-align: center;
+  table-layout: fixed;
+}
+
+.top {
+  background-color:red;
+}
+
+.img_corner{
+	border-radius: 15px;
+}
+
+.sub-topic-icon{
+	display:block;
+	margin:auto;
+}
+
+.flowchart_table svg{
+	stroke:black;
+	stroke-width:1.5px;
+	fill:white;
+}
+
+.js_example_container{
+	display:flex;
+	justify-content:space-evenly;
+	flex-wrap: wrap;
+}
+
+.js_examples{
+	border-radius:5px;
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+	width:300px;
+	height:440px;
+	padding:5px;
+	text-align:center;
+	margin-bottom:20px;
+	-webkit-transition: background 0.5s; /* For Safari 3.0 to 6.0 */
+    transition: background 0.5s; /* For modern browsers */
+}
+
+.js_example_title{
+	font-weight:bold;
+}
+
+.js_examples ul li{
+	list-style-type:none;
+	background-color:#4b8bbe;
+	margin-left:0px;
+	float:left;
+	width:100%;
+	border:1px solid black;
+	margin: 0px 1px 0px 1px;
+	-webkit-transition: background 1s; /* For Safari 3.0 to 6.0 */
+    transition: background 1s; /* For modern browsers */
+}
+
+.js_examples:hover{
+	background-color:#d4bdde;
+}
+
+.js_examples ul li:hover{
+	background-color:#FFD43B;
+	color:black;
+	cursor:pointer;
+}
+
+.js_examples ul{
+	padding-left:0px;
+	display:flex;
+}
+
+#js_fastfood_images{
+	display:flex;
+	justify-content:space-evenly;
+}
+
+
+/* iPad Pro 1024 width */
+@media (max-width: 1024px){
+	h2{
+		font-size:32px;
+		margin-top:10px;
+		margin-bottom:10px;
+	}
+	h3{
+		font-size:26px;
+	}
+	h4{
+		font-size:22px;
+		margin-bottom:20px;
+	}
+	p{
+		padding:3px 10px 3px 10px;
+		font-size:22px;
+		text-align:justify;
+	}
+	tr,td{
+		font-size:18px;
+	}
+	ul,ol{
+		padding-left:50px;
+		font-size:17px;
+	}
+	.tab button {
+		font-size:26px;
+		width:340px;
+		margin:2px;
+	}
+	.subtab button{
+		font-size:24px;
+		width:202px;
+		height:70px;
+		margin:2px;
+	}
+	.subtabWDD button, .subtabSDD button{
+		font-size:24px;
+		width:324px;
+		margin:4px;
+		height:45px;
+	}
+	.subtabWDD .active, .subtabSDD .active{
+		border:3px solid black;
+	}
+	.subtab{
+		margin-top:5px;
+	}
+	.tabcontent{
+		border:4px solid black;
+	}
+	.web_table{
+		margin:auto;
+		border-collapse: collapse;
+		width: 90%;
+		background-color:black;
+	}
+	tr,td{
+		font-size:20px;
+		
+	}
+}
+/* phone 480px width */
+@media only screen and (max-device-width: 480px){
+	body{
+		background-color:black;
+	}
+	h2{
+		font-size:55px;
+	}
+	h3{
+		font-size:50px;
+	}
+	h4{
+		font-size:40px;
+		margin-bottom:20px;
+	}
+	p{
+		padding:15px;
+		font-size:16px;
+		text-align:justify;
+	}
+	ul,ol{
+		padding-left:100px;
+	}
+	.subtabSDD, .subtabWDD{
+		width:100%;
+	}
+	.subtab{
+		margin-top:5px;
+	}
+	.tab button {
+		font-size:35px;
+		width:340px;
+		margin:2px;
+	}
+	.subtab button{
+		font-size:28px;
+		width:202px;
+	}
+	.subtabWDD button, .subtabSDD button{
+		font-size:26px;
+		width:330px;
+		margin:1px;
+	}
+	hr{
+		margin-top:40px;
+		margin-bottom:40px;
+		border: 3px solid #4b8bbe;
+	}
+	tr,td{
+		font-size:20px;
+	}
+}

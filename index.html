@@ -1,23 +1,80 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Home</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <!--
-      Need a visual blank slate?
-      Remove all code in `styles.css`!
-    -->
-    <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="script.js"></script>
-  </head>
-  <body>
-    <nav>
-      <a href="/" aria-current="page">Home</a>
-      <a href="/page2.html">Other page</a>
-    </nav>
-    <main>
-      <h1>Home page</h1>
-    </main>
-  </body>
+<html>
+	<head>
+		<title>Computing Science SQA - National 5, Higher and Advanced Higher Revision Site</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="icon" href="images/favicon.png">
+	</head>
+	<script>
+		function openTab(section) {
+			window.location.href = section;
+		}
+	</script>
+
+	<body>
+		<div class="body">
+			<div class="heading">
+				<h1>SQA Computing Science</h1>
+			</div>
+			<div class="level">
+				<div class="leveltab">
+					<button class="leveltablinks" onclick="openTab('n5/n5_index.html')" >National 5</button>
+					<button class="leveltablinks" onclick="openTab('higher/h_index.html')">Higher</button>
+					<button class="leveltablinks" onclick="openTab('ah/ah_index.html')">Advanced Higher</button>
+				</div>
+			</div>
+			<div class="main">
+				<div id="Intro" class="tabcontent" style="display:block;">
+					<p>This website aims to deliver all the content needed for Computing Science at National 5, Higher and Advanced Higher. That being said, please ensure that you are aware of the content difference for N5, Higher and Advanced Higher. Switch between the three levels at the top.</p>
+				</div>
+				
+				<div id="SDD" class="tabcontent">
+					<h2>Software Design and Development</h2>
+					<p>From SQA:
+						Candidates develop knowledge, understanding and practical problem-solving skills in
+						software design and development, through a range of practical and investigative tasks using
+						appropriate software development environments. This develops their programming and
+						computational-thinking skills by implementing practical solutions and explaining how these
+						programs work. Tasks involve some complex features (in both familiar and new contexts),
+						that require some interpretation by candidates. They are expected to analyse problems, and
+						design, implement, test and evaluate their solutions.
+					</p>
+					<p>Language focus: Python</p>
+				</div>
+				
+				<div id="WDD" class="tabcontent">
+					<h2>Website Design and Development</h2>
+					<p>From SQA: Candidates develop knowledge, understanding and practical problem-solving skills in web
+						design and development, through a range of practical and investigative tasks. This allows
+						candidates to apply computational-thinking skills to analyse, design, implement, test and
+						evaluate practical solutions to web-based problems, using a range of development tools such
+						as HTML, CSS and Javascript. Tasks involve some complex features (in both familiar and
+						new contexts), that require some interpretation by candidates.
+					</p>
+					<p>Language focus: HTML, CSS and JavaScript</p>
+				</div>
+				
+				<div id="DDD" class="tabcontent">
+					<h2>Database Design and Development</h2>
+					<p>From SQA: Candidates develop knowledge, understanding and practical problem-solving skills in
+						database design and development, through a range of practical and investigative tasks. This
+						allows candidates to apply computational-thinking skills to analyse, design, implement, test,
+						and evaluate practical solutions, using a range of development tools such as SQL. Tasks
+						involve some complex features (in both familiar and new contexts), that require some
+						interpretation by candidates.
+					</p>
+					<p>Language focus: SQL</p>
+				</div>
+				
+				<div id="CS" class="tabcontent">
+					<h2>Computer Structure</h2>
+					<p>From SQA: Candidates develop an understanding of how data and instructions are stored in binary form
+						and basic computer architecture. They gain an awareness of the environmental impact of the
+						energy use of computing systems and security precautions that can be taken to protect
+						computer systems.
+					</p>
+				</div>
+			</div>
+		</div>
+	</body>
 </html>

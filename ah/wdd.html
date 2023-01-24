@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Computing Science SQA - Higher Website Design and Development</title>
+		<link rel="stylesheet" type="text/css" href="../style.css">
+		<link rel="stylesheet" type="text/css" href="../prism.css">
+		<script src="../prism.js"></script>
+		<script src="js_advancedhigher.js"></script>
+		<link rel="icon" href="../images/favicon.png">
+	</head>
+	<body class="line-numbers">
+		<div class="body">
+			<div class="heading">
+				<h1><a href="../index.html">SQA Advanced Higher Computing Science</a></h1>
+			</div>
+			<div class="level">
+				<div class="leveltab">
+					<button class="leveltablinks" onclick="openTab('../n5/n5_index.html')" >National 5</button>
+					<button class="leveltablinks" onclick="openTab('../higher/h_index.html')">Higher</button>
+					<button class="leveltablinks active" onclick="openTab('ah/ah_index.html')">Advanced Higher</button>
+				</div>
+			</div>
+			<div class="main">
+				<div class="tab">
+					<button class="tablinks" onclick="openTab('ah_index.html')">Home</button>
+					<button class="tablinks" onclick="openTab('sdd.html')">1. SDD</button>
+					<button class="tablinks active" onclick="openTab('wdd.html')">2. WDD</button>
+					<button class="tablinks" onclick="openTab('ddd.html')">3. DDD</button>
+					<button class="tablinks" onclick="openTab('cs.html')">4. CS</button>
+					<button id="buttonR" class="tablinks" onclick="openTab('pastpapers.html')">Past Papers</button>
+				</div>
+				<div class="subtab">
+					<button class="subtablinks" onclick="openSubTab(event, 'Analysis')">Analysis</button>
+					<button class="subtablinks" onclick="openSubTab(event, 'Design')">Design</button>
+					<button class="subtablinks" onclick="openSubTab(event, 'Implementation')">Implementation</button>
+					<button class="subtablinks" onclick="openSubTab(event, 'Testing')">Testing</button>
+					<button class="subtablinks" onclick="openSubTab(event, 'Evaluation')">Evaluation</button>
+					<button class="subtablinks" onclick="openSubTab(event, 'Practice')">Practice</button>
+				</div>
+			<div id="Intro" class="tabcontent">
+				<h2> Intro to Website Design </h2>
+				<p>Website Design and Development will use 3 different coding languages; HTML, CSS and JavaScript. Each have their own purpose and use case.</p>
+				<p>Recommended sites:</p>
+				<ul>
+					<li><a href="https://www.w3schools.com/html/default.asp">W3Schools</a></li>
+					<li><a href="http://html.net/tutorials/">HTML.net</a></li>
+					<li><a href="https://www.codecademy.com/learn/learn-html">CodeAcademy</a></li>
+					<li><a href="https://www.sqa.org.uk/sqa/56924.html">SQA Computing Science</a></li>
+				</ul>
+				<p>I would recommend downloading Notepad++ at home so you can practice your website development skills out of school. Download from here: <a href="https://notepad-plus-plus.org/downloads/">Notepad++</a> (Windows OS only).</p>
+				<p>If you own a Mac (Apple laptop or desktop) that runs MacOS then you will need to use an alternative - recommended is <a href="https://www.sublimetext.com/">SublimeText</a> or <a href="https://macromates.com/">TextMate</a>.</p>
+			</div>
+			<div id="Analysis" class="tabcontent" style="display:none">
+				<h2>Analysis</h2>
+				<p>Before we start writing HTML, CSS and JavaScript, we must first understand exactly what it is we are being asked to create. This step analyses the requirements of the website and allows us to plan ahead as to how our website will look, work and function</p>
+				<h3>End-user Requirements</h3>
+				<p>The end user requirements are features or facilities of the website that the user should be able to access. For example, an end user requirement of the website Youtube would be that the user should be able to watch videos. Another example; an end user requirement for the website Amazon is that the user should be able to search, find and buy a product.</p>
+				<h3>Functional Requirements</h3>
+				<p>A functional requirement can be thought of as 'why has the website been created?' if we look at YouTube as an example again, we can say that they functional requirement is that the website should display videos</p>
+			</div>
+			<div id="Design" class="tabcontent" style="display:none">
+				<h2>Design</h2>
+				<p>At the design stage we start to layout both the navigational structure of the website as well as the layout. They include information that helps us when we come to make the webiste, as they will contain instructions and specifications regarding the layout.</p>
+				<h3>Navigational Structure</h3>
+				<p>At Higher level, we expand on the N5 diagram to show a multi-level website as well as highlighting the level for pages. You can see in the example below that the first set of pages is considered level 1, this is also the navigation that the user will see on the homepage. The subpages of level 1 are therefore level 2.</p>
+				<img src="../images/higher_structurediagram.png"/>
+				<h3>Wireframes</h3>
+				<p>Wireframes are used to plan the final layout of the webpages in the website. They are usually done with pencil and paper to sketch out a brief design, but can do be done digitally. At higher you will be expected to produce wireframes for both a website/webpage and a form.</p>
+				<ul>
+					<li>the indented layout of the page</li>
+					<li>the position of:</li>
+						<ul>
+							<li>navigational bars/links</li>
+							<li>all text elements on the page</li>
+							<li>media elements (including file format)</li>
+							<li>elements that allow a user to interact</li>
+							<li>form inputs</li>
+							<li>hyperlinks (including types)</li>
+						</ul>
+				</ul>
+				<p>Sometimes wireframes may also include annotations that specify:</p>
+				<ul>
+					<li>background colour</li>
+					<li>text font</li>
+					<li>text size</li>
+					<li>text alignment</li>
+					<li>text colour</li>
+					<li>the size of any images e.g 150 x 200 pixels</li>
+				</ul>
+				<p>Here is an example of a wireframe for a webpage:</p>
+				<img class="img_corner" src="../images/wireframe.png" />
+				<p>Here is an example of a wireframe for a form:</p>
+				<img class="img_corner" src="../images/wireframe_form.png" />
+			</div>
+			<div id="Implementation" class="tabcontent" style="display:none">
+				<div>
+					<h2>Implementation</h2>
+				</div>
+				<div class="subtabWDD">
+					<button class="subtabWDD active" onclick="openSubTabWDD(event, 'HTML')">HTML</button>
+					<button class="subtabWDD" onclick="openSubTabWDD(event, 'CSS')">CSS</button>
+					<button class="subtabWDD" onclick="openSubTabWDD(event, 'JavaScript')">JavaScript</button>
+				</div>
+				<div>
+					<div id="HTML" class="WDDtabcontent">
+						<h2> HTML </h2>
+						<p>At Higher level you will be expected to know HTML from <a href="../n5/wdd.html">National 5</a> level as well as the HTML5 page structure.</p>
+						<h3>HTML5 Page Structure</h3>
+						<p>There are 5 new tags that you need to be aware of for WDD in Higher;</p>
+						<ol>
+							<li>&lt;header&gt; - This contains elements that will appear at the top of every page eg. a title, banner and logo.</li>
+							<li>&lt;nav&gt; - This is where the navigation links/buttons will go</li>
+							<li>&lt;main&gt; - This is where the main content of the webpage will go</li>
+							<li>&lt;section&gt; - Sections are used within the main tags to define certain sections of the page</li>
+							<li>&lt;footer&gt; - The footer will usually contain information about the website such as contact and legal info.</li>
+						</ol>
+						<h2>HTML Tag List</h2>
+						<p>Below is a list of HTML tags and what they are used for. It isn't a complete list, but a comprehensive list of all the HTML tags that you will be expected to know for Computing Science N5 and Higher. [Click the table header to collapse the table]</p>
+						<table class="web_table">
+							<tr class="html_table_" onclick="collapseTable(this)">
+								<th id="leftCol">Tag:</th>
+								<th id="rightCol">Definition:</th>
+							</tr>
+							<tr class="html_table_body"><td>&lt;a&gt;</td><td class="tag-def">Defines a hyperlink</td></tr>
+							<tr class="html_table_body"><td>&lt;audio&gt;</td><td class="tag-def">Defines sound content</td></tr>
+							<tr class="html_table_body"><td>&lt;b&gt;</td><td class="tag-def">Defines bold text</td></tr>
+							<tr class="html_table_body"><td>&lt;body&gt;</td><td class="tag-def">Defines the document's body</td></tr>
+							<tr class="html_table_body"><td>&lt;br&gt;</td><td class="tag-def">Defines a single line break</td></tr>
+							<tr class="html_table_body"><td>&lt;button&gt;</td><td class="tag-def">Defines a clickable button</td></tr>
+							<tr class="html_table_body"><td>&lt;code&gt;</td><td class="tag-def">Defines a piece of computer code</td></tr>
+							<tr class="html_table_body"><td>&lt;col&gt;</td><td class="tag-def">Specifies column properties for each column within a &lt;colgroup&gt; element </td></tr>
+							<tr class="html_table_body"><td>&lt;div&gt;</td><td class="tag-def">Defines a section in a document</td></tr>
+							<tr class="html_table_body"><td>&lt;footer&gt;</td><td class="tag-def">Defines a footer for a document or section</td></tr>
+							<tr class="html_table_body"><td>&lt;form&gt;</td><td class="tag-def">Defines an HTML form for user input</td></tr>
+							<tr class="html_table_body"><td>&lt;h1&gt; to &lt;h6&gt;</td><td class="tag-def">Defines HTML headings</td></tr>
+							<tr class="html_table_body"><td>&lt;head&gt;</td><td class="tag-def">Defines information about the document</td></tr>
+							<tr class="html_table_body"><td>&lt;header&gt;</td><td class="tag-def">Defines a header for a document or section</td></tr>
+							<tr class="html_table_body"><td>&lt;html&gt;</td><td class="tag-def">Defines the root of an HTML document</td></tr>
+							<tr class="html_table_body"><td>&lt;img&gt;</td><td class="tag-def">Defines an image</td></tr>
+							<tr class="html_table_body"><td>&lt;input&gt;</td><td class="tag-def">Defines an input control</td></tr>
+							<tr class="html_table_body"><td>&lt;label&gt;</td><td class="tag-def">Defines a label for an &lt;input&gt; element</td></tr>
+							<tr class="html_table_body"><td>&lt;li&gt;</td><td class="tag-def">Defines a list item</td></tr>
+							<tr class="html_table_body"><td>&lt;link&gt;</td><td class="tag-def">Defines the relationship between a document and an external resource</td></tr>
+							<tr class="html_table_body"><td>&lt;main&gt;</td><td class="tag-def">Specifies the main content of a document</td></tr>
+							<tr class="html_table_body"><td>&lt;nav&gt;</td><td class="tag-def">Defines navigation links</td></tr>
+							<tr class="html_table_body"><td>&lt;ol&gt;</td><td class="tag-def">Defines an ordered list</td></tr>
+							<tr class="html_table_body"><td>&lt;option&gt;</td><td class="tag-def">Defines an option in a drop-down list</td></tr>
+							<tr class="html_table_body"><td>&lt;p&gt;</td><td class="tag-def">Defines a paragraph</td></tr>
+							<tr class="html_table_body"><td>&lt;script&gt;</td><td class="tag-def">Defines a client-side script - usally JavaScript</td></tr>
+							<tr class="html_table_body"><td>&lt;section&gt;</td><td class="tag-def">Defines a section in a document</td></tr>
+							<tr class="html_table_body"><td>&lt;select&gt;</td><td class="tag-def">Defines a drop-down list</td></tr>
+							<tr class="html_table_body"><td>&lt;source&gt;</td><td class="tag-def">Defines multiple media resources for media elements (&lt;video&gt; and &lt;audio&gt;)</td></tr>
+							<tr class="html_table_body"><td>&lt;strong&gt;</td><td class="tag-def">Defines important text</td></tr>
+							<tr class="html_table_body"><td>&lt;style&gt;</td><td class="tag-def">Defines style information for a document</td></tr>
+							<tr class="html_table_body"><td>&lt;sub&gt;</td><td class="tag-def">Defines subscripted text</td></tr>
+							<tr class="html_table_body"><td>&lt;sup&gt;</td><td class="tag-def">Defines superscripted text</td></tr>
+							<tr class="html_table_body"><td>&lt;table&gt;</td><td class="tag-def">Defines a table</td></tr>
+							<tr class="html_table_body"><td>&lt;td&gt;</td><td class="tag-def">Defines a cell in a table</td></tr>
+							<tr class="html_table_body"><td>&lt;textarea&gt;</td><td class="tag-def">Defines a multiline input control (text area)</td></tr>
+							<tr class="html_table_body"><td>&lt;th&gt;</td><td class="tag-def">Defines a header cell in a table</td></tr>
+							<tr class="html_table_body"><td>&lt;time&gt;</td><td class="tag-def">Defines a date/time</td></tr>
+							<tr class="html_table_body"><td>&lt;title&gt;</td><td class="tag-def">Defines a title for the document</td></tr>
+							<tr class="html_table_body"><td>&lt;tr&gt;</td><td class="tag-def">Defines a row in a table</td></tr>
+							<tr class="html_table_body"><td>&lt;u&gt;</td><td class="tag-def">Defines text that should be stylistically different from normal text</td></tr>
+							<tr class="html_table_body"><td>&lt;ul&gt;</td><td class="tag-def">Defines an unordered list</td></tr>
+							<tr class="html_table_body"><td>&lt;video&gt;</td><td class="tag-def">Defines a video or movie</td></tr>
+						</table>
+					</div>
+					
+					<div id="CSS" class="WDDtabcontent" style="display:none">
+						<h2> CSS </h2>
+						<p>CSS - Cascading Style Sheet is the language that adds style and design to the websites. On top of what you learned in <a href="../n5/wdd.html">N5 WDD</a>, you will be controlling more of the websites design from external CSS.</p>
+						<h3>Basic CSS</h3>
+						<p>Basic CSS example to give the body a background colour, and style every paragraph tag with font family, font size and colour.</p>
+<pre><code class="language-css">body{
+	background-color:blue;
+}
+
+p{
+	font-family:Arial;
+	font-size:23px;
+	color:white;
+}
+</code></pre>
+						<p>The above will make any text in a &lt;p&gt; tag have the font of Arial, 23px font size and be white in colour. The entire body of the webpage will have a blue background.</p>
+						<h3>Grouping and Descendant Selectors</h3>
+						<p>At Higher we will be expected to use Grouping and Descendant CSS selectors.</p>
+						<p><b>Grouping Selector</b></p>
+						<p>Grouping selectors allows us to reuse the same CSS rules for multiple elements. In the example below I want to apply 2 rules; padding and margin-top, to 4 different tags, main, nav, footer and header, at once. I simply name my tags I want to apply the rule to, and place a comma between each one.</p>
+						<pre><code class="language-css">nav, main, footer, header{
+	padding:5px;
+	margin-top:5px;
+}
+</code></pre>
+						<p><b>Descendant Selector</b></p>
+						<p>Descendant selectors are used to reduce the need for ID's and class' by targetting tags within tags. For example; if we have a webpage that has lots of div's and inside those div's we have a h3 tag, we could use descendant selector CSS to target only the h3 tags that are inside a div.</p>
+						<pre><code class="language-css">div h3{
+	color:blue;
+	text-decoration:underline;
+}
+</code></pre>
+						<p>Another scenario would be if I had a nav bar that had an unordered list in and I wanted to style the individual list items a specific way, I would use descendant selectors to target only the &lt;li&gt; tag found inside an &lt;nav&gt; tag.</p>
+						<pre><code class="language-css">nav ul li{
+	color:blue;
+	list-style-type:none;
+}
+</code></pre>
+						<h3>Controlling Appearance</h3>
+						<p>CSS has a property that allows us to control how an element appears on the page. This property is called <i>display</i>. You should be aware of 3 of its values; block, inline and none.</p>
+						<code class="language-css">display:block</code>
+						<div style="height:40px;"><p style="display:block;border:1px solid;margin-top:0px;">The border indicates the space this div will take up when the display property is set to block</p></div>
+						<code class="language-css">display:inline</code>
+						<div style="height:40px;"><p style="display:inline;border:1px solid;">The border indicates the space this div will take up when the display property is set to inline</p></div>
+						<code class="language-css">display:none</code>
+						<p>When the display property is set to block, no element can be positioned to the side of it.</p>
+						<h3>Controlling Spacing</h3>
+						<p>We can control the distance between elements using margins and padding</p>
+						<img src="../images/margin-padding.png" />
+						<p>Margin will control the spacing between elements, where as padding will control the spacing of elements within an element, for example text within a div</p>
+						<img src="../images/margin-padding-example.png" />
+						<h3>Controlling Layout</h3>
+						<p>We can use float property in CSS to control how an element sits. We have 2 properties that we need to know and use; left and right. But we also have another property that works along with float and that is clear. It only has 1 property you will likely need to use; both.</p>
+						<p>Switch between the float options below and then trigger clear:both on or off to see the impact</p>
+						<div id="floatDIV">
+							<form>
+								<table class="web_table">
+								<thead>
+									<tr>
+										<th>Image</th>
+										<th>Text</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td style="width:300px;">
+											<input type="radio" id="left" name="floatOption" value="left" onclick="floatLeft()">
+											<label for="html">float:left</label>
+											<input type="radio" id="right" name="floatOption" value="right" onclick="floatRight()">
+											<label for="css">float:right</label>
+										</td>
+										<td style="width:180px;">
+											<input type="checkbox" id="clear" name="clear" onclick="clearBoth()">  
+											<label for="clear">clear:both</label>
+										</td>
+									</tr>
+								</tbody>
+								</table>
+							</form>
+							<br>
+							<img id="floatDIV_image" src="../images/css_logo.png" style="margin:10px;"/>
+							<p id="floatDIV_text">Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language such as HTML. CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.</p>
+						</div>
+						<h3>CSS Rules</h3>
+						<p>Here is a list of ways you will be expected to use CSS for Website Design and Development. Click the heading to hide the table.</p>
+						<table class="web_table">
+							<tr class="css_table1_" onclick="collapseTable(this)">
+								<td colspan="3" style="text-align:center;background-color:lightgrey;cursor:pointer;"><h4>Higher</h4></td>
+							</tr>
+							<tr class="css_table1_" onclick="collapseTable(this)">
+								<th>Property</th>
+								<th>Effect</th>
+								<th>Example</th>
+							</tr>
+							<tr class="css_table1_body">
+								<td>margin</td>
+								<td>Margin is used to push an element away from another</td>
+								<td>margin:10px</td>
+							</tr>
+							<tr class="css_table1_body">
+								<td>padding</td>
+								<td>Padding pushes content from the edge of the element it is in</td>
+								<td>padding:5px</td>
+							</tr>
+							<tr class="css_table1_body">
+								<td>display</td>
+								<td>Display will control how an element appears on the page</td>
+								<td>display:none<br>display:block<br>display:inline</td>
+							</tr>
+							<tr class="css_table1_body">
+								<td>float</td>
+								<td>Float is used to change how elements sit with other elements</td>
+								<td>float:left<br>float:right</td>
+							</tr>
+							<tr class="css_table1_body">
+								<td>clear</td>
+								<td>Clear will control how the float impacts another element</td>
+								<td>clear:left<br>clear:right<br>clear:both</td>
+							</tr>
+							<tr class="css_table1_body">
+								<td>list-style-type</td>
+								<td>This is a specific css rule to change how unordered lists appear</td>
+								<td>list-style-type:none<br>list-style-type:disc<br>list-style-type:square</td>
+							</tr>
+						</table>
+						<p>Here is a comprehensive list of CSS tags that we might be expected to use in Higher Computing Science Website Design and Development:</p>
+						<table class="web_table">
+							<tr class="css_table2_" onclick="collapseTable(this)">
+								<th id="leftCol">Tag:</th>
+								<th id="rightCol">Definition:</th>
+							</tr>
+							<tr class="css_table2_body"><td>align-content</td><td class="tag-css">Specifies the alignment between the lines inside a flexible container when the items do not use all available space</td></tr>
+							<tr class="css_table2_body"><td>align-items</td><td class="tag-css">Specifies the alignment for items inside a flexible container</td></tr>
+							<tr class="css_table2_body"><td>background-attachment</td><td class="tag-css">Sets whether a background image scrolls with the rest of the page, or is fixed</td></tr>
+							<tr class="css_table2_body"><td>background-color</td><td class="tag-css">Specifies the background color of an element</td></tr>
+							<tr class="css_table2_body"><td>border</td><td class="tag-css">A shorthand property for border-width, border-style and border-color</td></tr>
+							<tr class="css_table2_body"><td>border-collapse</td><td class="tag-css">Sets whether table borders should collapse into a single border or be separated</td></tr>
+							<tr class="css_table2_body"><td>border-color</td><td class="tag-css">Sets the color of the four borders</td></tr>
+							<tr class="css_table2_body"><td>border-radius</td><td class="tag-css">A shorthand property for the four border-*-radius properties</td></tr>
+							<tr class="css_table2_body"><td>border-spacing</td><td class="tag-css">Sets the distance between the borders of adjacent cells</td></tr>
+							<tr class="css_table2_body"><td>border-style</td><td class="tag-css">Sets the style of the four borders</td></tr>
+							<tr class="css_table2_body"><td>bottom</td><td class="tag-css">Sets the elements position, from the bottom of its parent element</td></tr>
+							<tr class="css_table2_body"><td>clear</td><td class="tag-css">Specifies on which sides of an element floating elements are not allowed to float</td></tr>
+							<tr class="css_table2_body"><td>color</td><td class="tag-css">Sets the color of text</td></tr>
+							<tr class="css_table2_body"><td>display</td><td class="tag-css">Specifies how a certain HTML element should be displayed</td></tr>
+							<tr class="css_table2_body"><td>float</td><td class="tag-css">Specifies whether or not a box should float</td></tr>
+							<tr class="css_table2_body"><td>font</td><td class="tag-css">A shorthand property for the font-style, font-variant, font-weight, font-size/line-height, and the font-family properties</td></tr>
+							<tr class="css_table2_body"><td>font-family</td><td class="tag-css">Specifies the font family for text</td></tr>
+							<tr class="css_table2_body"><td>font-size</td><td class="tag-css">Specifies the font size of text</td></tr>
+							<tr class="css_table2_body"><td>font-weight</td><td class="tag-css">Specifies the weight of a font</td></tr>
+							<tr class="css_table2_body"><td>height</td><td class="tag-css">Sets the height of an element</td></tr>
+							<tr class="css_table2_body"><td>left</td><td class="tag-css">Specifies the left position of a positioned element</td></tr>
+							<tr class="css_table2_body"><td>line-height</td><td class="tag-css">Sets the line height</td></tr>
+							<tr class="css_table2_body"><td>list-style-type</td><td class="tag-css">Specifies the type of list-item marker</td></tr>
+							<tr class="css_table2_body"><td>margin</td><td class="tag-css">Sets all the margin properties in one declaration</td></tr>
+							<tr class="css_table2_body"><td>margin-bottom</td><td class="tag-css">Sets the bottom margin of an element</td></tr>
+							<tr class="css_table2_body"><td>margin-left</td><td class="tag-css">Sets the left margin of an element</td></tr>
+							<tr class="css_table2_body"><td>margin-right</td><td class="tag-css">Sets the right margin of an element</td></tr>
+							<tr class="css_table2_body"><td>margin-top</td><td class="tag-css">Sets the top margin of an element</td></tr>
+							<tr class="css_table2_body"><td>opacity</td><td class="tag-css">Sets the opacity level for an element</td></tr>
+							<tr class="css_table2_body"><td>order</td><td class="tag-css">Sets the order of the flexible item, relative to the rest</td></tr>
+							<tr class="css_table2_body"><td>outline</td><td class="tag-css">A shorthand property for the outline-width, outline-style, and the outline-color properties</td></tr>
+							<tr class="css_table2_body"><td>outline-color</td><td class="tag-css">Sets the color of an outline</td></tr>
+							<tr class="css_table2_body"><td>outline-style</td><td class="tag-css">Sets the style of an outline</td></tr>
+							<tr class="css_table2_body"><td>outline-width</td><td class="tag-css">Sets the width of an outline</td></tr>
+							<tr class="css_table2_body"><td>overflow</td><td class="tag-css">Specifies what happens if content overflows an element's box</td></tr>
+							<tr class="css_table2_body"><td>overflow-wrap</td><td class="tag-css">Specifies whether or not the browser may break lines within words in order to prevent overflow</td></tr>
+							<tr class="css_table2_body"><td>overflow-x</td><td class="tag-css">Specifies whether or not to clip the left/right edges of the content, if it overflows the element's content area</td></tr>
+							<tr class="css_table2_body"><td>overflow-y</td><td class="tag-css">Specifies whether or not to clip the top/bottom edges of the content, if it overflows the element's content area</td></tr>
+							<tr class="css_table2_body"><td>padding</td><td class="tag-css">A shorthand property for all the padding-* properties</td></tr>
+							<tr class="css_table2_body"><td>padding-bottom</td><td class="tag-css">Sets the bottom padding of an element</td></tr>
+							<tr class="css_table2_body"><td>padding-left</td><td class="tag-css">Sets the left padding of an element</td></tr>
+							<tr class="css_table2_body"><td>padding-right</td><td class="tag-css">Sets the right padding of an element</td></tr>
+							<tr class="css_table2_body"><td>padding-top</td><td class="tag-css">Sets the top padding of an element</td></tr>
+							<tr class="css_table2_body"><td>position</td><td class="tag-css">Specifies the type of positioning method used for an element (static, relative, absolute or fixed)</td></tr>
+							<tr class="css_table2_body"><td>right</td><td class="tag-css">Specifies the right position of a positioned element</td></tr>
+							<tr class="css_table2_body"><td>text-align</td><td class="tag-css">Specifies the horizontal alignment of text</td></tr>
+							<tr class="css_table2_body"><td>text-indent</td><td class="tag-css">Specifies the indentation of the first line in a text-block</td></tr>
+							<tr class="css_table2_body"><td>text-justify</td><td class="tag-css">Specifies the justification method used when text-align is "justify"</td></tr>
+							<tr class="css_table2_body"><td>text-orientation</td><td class="tag-css">Defines the orientation of the text in a line</td></tr>
+							<tr class="css_table2_body"><td>text-overflow</td><td class="tag-css">Specifies what should happen when text overflows the containing element</td></tr>
+							<tr class="css_table2_body"><td>top</td><td class="tag-css">Specifies the top position of a positioned element</td></tr>
+							<tr class="css_table2_body"><td>vertical-align</td><td class="tag-css">Sets the vertical alignment of an element</td></tr>
+							<tr class="css_table2_body"><td>visibility</td><td class="tag-css">Specifies whether or not an element is visible</td></tr>
+							<tr class="css_table2_body"><td>white-space</td><td class="tag-css">Specifies how white-space inside an element is handled</td></tr>
+							<tr class="css_table2_body"><td>width</td><td class="tag-css">Sets the width of an element</td></tr>
+							<tr class="css_table2_body"><td>word-wrap</td><td class="tag-css">Allows long, unbreakable words to be broken and wrap to the next line</td></tr>
+						</table>
+					</div>
+					
+					<div id="JavaScript" class="WDDtabcontent" style="display:none">
+						<h2> JavaScript </h2>
+						<p>JavaScript is the language that adds interactivity and dynamic elements to the websites.</p>
+						<p>For example, move your mouse over the text below and then move your mouse off - notice the change?</p>
+						<p id="js-example" onmouseover="onMouseOver()" onmouseout="onMouseOut()">EXAMPLE JAVASCRIPT</p>
+						<p>At Higher you will be expected to implement JavaScript using any or all 3 mouse events; onmouseover, onmouseout, and onclick. These events are placed inside the HTML element tag.</p>
+<pre><code class="language-html">&lt;h3 onClick="____"&gt;Click Me&lt;/h3&gt;
+&lt;h3 onmouseover="____" onmouseout="____" &gt;Hover your mouse over me&lt;/h3&gt;</code></pre>
+						<p>What goes inside the quotes is either a function or JavaScript itself. It is cleaner to put a call to a function that we define in &lt;script&gt; tags that sit inside the &lt;head&gt; tag.</p>
+<pre><code class="language-javascript">&lt;head&gt;
+	&lt;script&gt;
+		function changeToRed(){
+			document.getElementById("target").style.color="red";
+		}
+	&lt;/script&gt;
+&lt;/head&gt;
+</code></pre>
+<pre><code class="language-javascript">&lt;h3 onClick="changeToRed()"&gt;Click Me&lt;/h3&gt;
+</code></pre>
+						<p>All of our JavaScript should go in the script tags</p>
+						<h3>JavaScript Examples</h3>
+						<div class="js_example_container">
+							<div class="js_examples">
+								<div>
+									<p class="js_example_title">Image Change</p>
+									<p>Change an image when we move our mouse over then return the image back to the original when the mouse moves off.</p>
+									<img id="imgChange" src="../images/js_imgA.png" onmouseover="imgB()" onmouseout="imgA()"/>
+								</div>
+								<div class="jsExampleCode" id="jsExample1Code" style="display:none;">
+									<pre><code class="language-javascript">function imgA(){
+			document.getElementById("imgChange").src = "../images/js_imgA.png";
+		}
+		
+		function imgB(){
+			document.getElementById("imgChange").src = "../images/js_imgB.png";
+		}
+</code></pre>
+								</div>
+							</div>
+							
+							<div class="js_examples">
+								<p class="js_example_title">Image Size</p>
+								<p>Increase image size when we move our mouse over it, return the image back to the original size when mouse moves off the image.</p>
+								<img id="imgResize" src="../images/JavaScript-logo.png" onmouseover="imgSizeBig()" onmouseout="imgSizeOriginal()"/>
+							</div>
+							
+							<div class="js_examples">
+								<p class="js_example_title">Image Reveal Text</p>
+								<p>We can show and hide text when we click an element</p>
+								<img id="imgText" src="../images/JavaScript-logo.png" style="width:100px;" onclick="displayText()"/>
+								<p id="imgTextJS" style="display:none;">JavaScript is a programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS.</p>
+							</div>
+							
+							<div class="js_examples">
+								<p class="js_example_title">Text Effect</p>
+								<p>JavaScript can also affect text. Hover your mouse over the following text:</p>
+								<p onmouseover="this.style.fontWeight='bold'" onmouseout="this.style.fontWeight='normal'">This text can be made bold when the user hovers their mouse over, and then returns back to normal weight when the mouse moves off.</p>
+							</div>
+							
+							<div class="js_examples">
+								<p class="js_example_title">Image Reveal</p>
+								<p>onClick applied to a piece of text to reveal a relevant image.</p>
+								<ul>
+									<li onclick="showPizza()">Pizza</li>
+									<li onclick="showBurger()">Burger</li>
+									<li onclick="showFries()">Fries</li>
+								</ul>
+								<div id="js_fastfood_images">
+									<img id="pizza" src="../images/pizza.png">
+									<img id="burger" src="../images/burger.png" style="display:none;">
+									<img id="fries" src="../images/french-fries.png" style="display:none;">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

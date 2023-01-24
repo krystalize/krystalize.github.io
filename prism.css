@@ -1,0 +1,209 @@
+/* PrismJS 1.25.0
+https://prismjs.com/download.html#themes=prism-okaidia&languages=markup+css+clike+javascript+python&plugins=line-numbers */
+code[class*="language-"],
+pre[class*="language-"] {
+   color: #f8f8f2;
+   background: 0 0;
+   text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+   font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
+   font-size: 1.1em;
+   text-align: left;
+   white-space: pre;
+   word-spacing: normal;
+   word-break: normal;
+   word-wrap: normal;
+   line-height: 1.5;
+   -moz-tab-size: 4;
+   -o-tab-size: 4;
+   tab-size: 4;
+   -webkit-hyphens: none;
+   -moz-hyphens: none;
+   -ms-hyphens: none;
+   hyphens: none;
+}
+pre[class*="language-"] {
+   padding: 1em;
+   margin: 0.5em 0;
+   overflow: auto;
+   border-radius: 0.3em;
+}
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+   background: #272822;
+}
+:not(pre) > code[class*="language-"] {
+   padding: 0.1em;
+   border-radius: 0.3em;
+   white-space: normal;
+}
+.token.cdata,
+.token.comment,
+.token.doctype,
+.token.prolog {
+	/* grey/blue */
+   color: #8292a2;
+}
+
+.token.output{
+	font-style: italic;
+}
+
+.token.punctuation {
+   color: #f8f8f2;
+}
+.token.namespace {
+   opacity: 0.7;
+}
+.token.attr-name,
+.token.constant,
+.token.deleted,
+.token.property,
+.token.symbol{
+	/* pink */
+   color: #f92672; 
+}
+.token.builtin,
+.token.attr-value {
+	/* purple */
+   color: #ae81ff;
+}
+.token.char,
+.token.inserted,
+.token.selector,
+.token.string {
+	/* green */
+   color: #a6e22e;
+}
+.language-css .token.string,
+.style .token.string,
+.token.entity,
+.token.operator,
+.token.url,
+.token.variable {
+	/* white */
+   color: #f8f8f2;
+}
+.token.atrule,
+.token.class-name,
+.token.function {
+	/* yellow */
+   color: #e6db74;
+}
+.token.tag {
+	/* lightblue */
+   color: #2ba1f0;
+}
+.token.keyword,
+.token.important,
+.token.boolean,
+.token.regex {
+	/* orange */
+   color: #fd971f;
+}
+.token.bold,
+.token.important {
+   font-weight: 700;
+}
+.token.italic {
+   font-style: italic;
+}
+.token.entity {
+   cursor: help;
+}
+pre[class*="language-"].line-numbers {
+   position: relative;
+   padding-left: 3.8em;
+   counter-reset: linenumber;
+}
+pre[class*="language-"].line-numbers > code {
+   position: relative;
+   white-space: inherit;
+}
+.line-numbers .line-numbers-rows {
+   position: absolute;
+   pointer-events: none;
+   top: 0;
+   font-size: 100%;
+   left: -3.8em;
+   width: 3em;
+   letter-spacing: -1px;
+   border-right: 1px solid #999;
+   -webkit-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+}
+.line-numbers-rows > span {
+   display: block;
+   counter-increment: linenumber;
+}
+.line-numbers-rows > span:before {
+   content: counter(linenumber);
+   color: #999;
+   display: block;
+   padding-right: 0.8em;
+   text-align: right;
+}
+
+@media only screen and (max-device-width: 1024px){
+	code[class*="language-"],
+	pre[class*="language-"] {
+		font-size:24px;
+		line-height: 1.3;
+		margin: 0.6em 0;
+		overflow: auto;
+		border-radius: 0.3em;
+	}
+	pre[class*="language-"] {
+		padding: 0.5em;
+		margin: 0.6em 0;
+		overflow: auto;
+		border-radius: 0.3em;
+	}
+	pre[class*="language-"].line-numbers {
+		position: relative;
+		padding-left: 3em;
+	}
+}
+
+@media only screen and (max-device-width: 768px){
+	code[class*="language-"],
+	pre[class*="language-"] {
+		font-size:28px;
+		line-height: 1.3;
+		margin: 0.2em 0;
+		overflow: auto;
+		border-radius: 0.3em;
+	}
+	pre[class*="language-"] {
+		padding: 0.5em;
+		margin: 0.2em 0;
+		overflow: auto;
+		border-radius: 0.3em;
+	}
+	pre[class*="language-"].line-numbers {
+		position: relative;
+		padding-left: 3em;
+	}
+}
+
+@media only screen and (max-device-width: 480px){
+	code[class*="language-"],
+	pre[class*="language-"] {
+		font-size:35px;
+		line-height: 1.2;
+		margin: 0.2em 0;
+		overflow: auto;
+		border-radius: 0.3em;
+	}
+	pre[class*="language-"] {
+		padding: 0.5em;
+		margin: 0.2em 0;
+		overflow: auto;
+		border-radius: 0.3em;
+	}
+	pre[class*="language-"].line-numbers {
+		position: relative;
+		padding-left: 3em;
+	}
+}

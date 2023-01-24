@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Computing Science SQA - N5 Software Design and Development</title>
+		<link rel="stylesheet" type="text/css" href="../style.css">
+		<link rel="stylesheet" type="text/css" href="../prism.css">
+		<script src="../prism.js"></script>
+		<script src="js_n5.js"></script>
+		<link rel="icon" href="../images/favicon.png">
+		<meta name="viewport" content="width=device-width">
+	</head>
+	<body class="line-numbers">
+		<div class="body">
+			<div class="heading">
+				<h1><a href="../index.html">SQA National 5 Computing Science</a></h1>
+			</div>
+			<div class="level">
+				<div class="leveltab">
+					<button class="leveltablinks active" onclick="openTab('../n5/n5_index.html')" >National 5</button>
+					<button class="leveltablinks" onclick="openTab('../higher/h_index.html')">Higher</button>
+					<button class="leveltablinks" onclick="openTab('../ah/ah_index.html')">Advanced Higher</button>
+				</div>
+			</div>
+			<div class="main">
+				<div class="tab">
+					<button class="tablinks" onclick="openTab('n5_index.html')" >Home</button>
+					<button class="tablinks active" onclick="openTab('sdd.html')">1. SDD</button>
+					<button class="tablinks" onclick="openTab('wdd.html')">2. WDD</button>
+					<button class="tablinks" onclick="openTab('ddd.html')">3. DDD</button>
+					<button class="tablinks" onclick="openTab('cs.html')">4. CS</button>
+					<button class="tablinks" onclick="openTab('pastpapers.html')">Past Papers</button>
+				</div>
+				<div class="subtab">
+					<button class="subtablinks" onclick="openSubTab(event, 'Analysis')">Analysis</button>
+					<button class="subtablinks" onclick="openSubTab(event, 'Design')">Design</button>
+					<button class="subtablinks" onclick="openSubTab(event, 'Implementation')">Implementation</button>
+					<button class="subtablinks" onclick="openSubTab(event, 'Testing')">Testing</button>
+					<button class="subtablinks" onclick="openSubTab(event, 'Evaluation')">Evaluation</button>
+					<button class="subtablinks" onclick="openSubTab(event, 'Practice')">Practice</button>
+				</div>
+				<div id="Intro" class="tabcontent">
+					<h2>Intro to Python</h2>
+					<p>Python is a high level programming language. The language is designed to be readable and is used across many large tech companies such as YouTube, Google, NASA etc.</p>
+					<p>You can download Python IDLE (Integrated Development and Learning Environment) from the official <a href="https://www.python.org/">Python Website.</a></p>
+					<p>Other Python Resources:
+					<ul>
+						<li><a href="https://docs.python.org/3/">Python Documentation</a> <img src="../images/py.png"/></li>
+						<li><a href="https://pythonbasics.org/">Python Basics</a> <img src="../images/py.png"/></li>
+						<li><a href="https://youtube.com/channel/UCX4LabLfay8sZhd_zBDDn8w">Python YouTube Videos</a> <img src="../images/youtube.ico"/></li>
+						<li><a href="https://www.reddit.com/r/python">Python Sub-Reddit</a> <img src="../images/reddit.png"/></li>
+					</ul>
+					</p>
+				</div>
+				<div id="Analysis" class="tabcontent" style="display:none">
+					<h2>Analysis</h2>
+					<p>At National 5 level you will be expected to know the Development Methodology and the 6 stages within this development process:</p>
+					<ol>
+						<li>Analysis</li>
+						<li>Design</li>
+						<li>Implementation</li>
+						<li>Testing</li>
+						<li>Documentation</li>
+						<li>Evaluation</li>
+					</ol>
+					<p>This development methodoloy is an iterative process since stages of the methodoloy can be and will be revisited due to information gained at later stages.</p>
+					<p>At the analysis stage the programmer will look at what it is the program should do, and then decide what should be included in the program.</p>
+					<ul>
+						<li>What is the purpose of the program?</li>
+						<li>What features should the program have in order to solve the problem? (These are considered the functional requirements) and is there a requirement for input validation?</li>
+						<li>What is the range and type of data to be entered into the program? (Inputs)</li>
+						<li>What processes will the program do with the entered data?</li>
+						<li>What outputs must the program have?</li>
+					</ul>
+					<h3>Assumptions</h3>
+					<p>The programmer must make assumptions in the analysis stage if there are aspects of the program that are not communicated or unclear. Assumptions will be dependant on the programs' specification.</p>
+					<h3>Input Validation</h3>
+					<p>Validating input is important as any program we make will require specific data or data types to be entered. If this validation isn't present, and our program accepts any data then it can, and most likely will, cause big problems for us further down the line.</p>
+					<p>Input Validation is where we check the data being entered is correct - if it isn't then we reject that data and ask for the correct data to be re-entered.</p>
+				</div>
+				<div id="Design" class="tabcontent" style="display:none">
+					<h2>Design</h2>
+					<p>The design stage is where the program is broken down into a plan of how the programmer or team will solve the problem</p>
+					<p></p>
+					<h3>Data Types</h3>
+					<p>There are 5 data types you need to be aware of;</p>
+					<table class="data_type_table">
+						<thead>
+							<tr>
+								<th>Data Type</th>
+								<th>Description</th>
+								<th>Example</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Character</td>
+								<td>A single character</td>
+								<td>A</td>
+							</tr>
+							<tr>
+								<td>String</td>
+								<td>A string of characters</td>
+								<td>Hello</td>
+							</tr>
+							<tr>
+								<td>Int</td>
+								<td>A whole number</td>
+								<td>20</td>
+							</tr>
+							<tr>
+								<td>Real</td>
+								<td>A decimal number</td>
+								<td>29.99</td>
+							</tr>
+							<tr>
+								<td>Boolean</td>
+								<td>True or False</td>
+								<td>True</td>
+							</tr>
+						</tbody>
+					</table>
+					<h3>Data Structures</h3>
+					<p>Sometimes a simple data type is not sufficient for the program - instead we must consider the use of arrays.</p>
+					<p>At National 5 level you only need to know about 1-Dimensional arrays. These are data structures that contain multiple pieces of data inside one data structure and under one name. The data inside should be of the same data type (see above)</p>
+					<h3>Design Notation</h3>
+					<p>The program that is to be written will be designed using one of three design notations;</p>
+					<ol>
+						<li>Structure Diagram</li>
+						<li>Flowchart</li>
+						<li>Pseudocode</li>
+					</ol>
+					<p>Any one of the 3 design notations are expected in your practical assessment as well as your written assessment - however, this site will only cover 2 of the 3 (Flowchart and Pseudocode)</p>
+					<p><b>Flowchart</b></p>
+					<p>Flowcharts detail the order of execution of instructions within a program. They are easy to follow, only have one possible path, a start and an end. They use shapes to determine the type of instruction and arrows to show the path of the flowchart.</p>
+					<table class="flowchart_table">
+						<thead>
+							<tr>
+								<th class="symbolCol">Symbol</th>
+								<th>Description</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>
+									<svg width="100" height="50">
+										<rect width="100" height="50" />
+										Sorry, your browser does not support inline SVG.
+									</svg>
+								</td>
+								<td>A process that doesn't fit into any of the below</td>
+							</tr>
+							<tr>
+								<td>
+									<svg width="112" height="62">
+										<ellipse cx="56" cy="31" rx="50" ry="28"/>
+									</svg>
+								</td>
+								<td>This is used to indicate the start and stop of a flowchart</td>
+							</tr>
+							<tr>
+								<td>
+									<svg width="120" height="50">
+										<polygon class="hex" points="20,0 100,0 120,25 100,50 20,50 0,25"></polygon>
+									</svg>
+								</td>
+								<td>This is used to initialise a variable or array before we use it</td>
+							</tr>
+							<tr>
+								<td>
+									<svg width="125" height="50">
+										<rect width="100" height="50" transform="matrix(1, 0, -0.5, 1, 25, 0)"></rect>
+									</svg>
+								</td>
+								<td>This is used to signify input and output in the program</td>
+							</tr>
+							<tr>
+								<td>
+									<svg width="70" height="70">
+										<rect width="50" height="50" transform="matrix(0.7, 0.7, -0.7, 0.7, 35, 0)"></rect>
+									</svg>
+								</td>
+								<td>This is used when we want to give the program a decision to make. It has 2 possible paths to follow</td>
+							</tr>
+							<tr>
+								<td>
+									<svg width="120" height="50">
+										<rect width="20" height="50"></rect>
+										<rect width="80" height="50" x="20"></rect>
+										<rect width="20" height="50" x="100"></rect>
+									</svg>
+								</td>
+								<td>This is used to indicate where a pre-defined function is being used. </td>
+							</tr>
+							<tr>
+								<td>
+									<svg width="45" height="45">
+										<circle cx="25" cy="25" r="18" />
+									</svg>
+								</td>
+								<td>This is used to show that the flowchart is to be continued on the next page, should you run out of space</td>
+							</tr>
+						</tbody>
+					</table>
+					<p>Here is an example of a flowchart for a number guessing game;</p>
+					<img src="../images/flowchart_n5.png"/>
+					<p><b>Pseudocode</b></p>
+					<p>Pseudocode is simply 'fake' code. It is code that cannot be executed, and is written in such a way that it is easy to understand. Think of it as a blend between real code and pure English.</p>
+					<pre><code class="language-py">randomNumber = generate number between 1 and 100
+userGuess = input from keyboard
+while userGuess does not equal randomNumber
+	display message asking to guess again
+	userGuess = input from keyboard
+display well done message</code></pre>
+					<p>The above pseudocode written in Python:</p>
+					<pre><code class="language-py">number = random.randint(0,100)
+print("Guess a number between 1 and 100")
+guess = int(input("Guess a number:"))
+
+while guess != number:
+    print("Try again")
+    guess = int(input("Guess a number:"))
+else:
+    print("Well done, you guessed correct")
+</code></pre>
+					<h3>Wireframe</h3>
+					<p>Wireframes are used to show how the program will look in terms of its layout and features. However, since Python, at the level we learn, does not have a user interface for the programs we make. That being said, we still need to know how to design a user interface for a piece of software.</p>
+					<p>Consider this checklist when creating a wireframe:</p>
+					<ul>
+						<li>Areas where there will be user input</li>
+						<li>Areas where there will be output</li>
+						<li>Any buttons that are required</li>
+						<li>Design information such as font, background colour etc)</li>
+					</ul>
+					<p>You should label the wireframe with the elements where input, process and output are concerned.</p>
+					<img src="../images/wireframe_n5.png"/>
+				</div>
+				<div id="Implementation" class="tabcontent" style="display:none">
+					<div>
+						<h2>Implementation</h2>
+					</div>
+					<div class="subtabSDD">
+						<button class="subtabSDD active" onclick="openSubTabSDD(event, 'Variables')">Variables</button>
+						<button class="subtabSDD" onclick="openSubTabSDD(event, 'DataTypes')">Data Types</button>
+						<button class="subtabSDD" onclick="openSubTabSDD(event, 'Loops')">Loops</button>
+						<button class="subtabSDD" onclick="openSubTabSDD(event, 'Selection')">Selection</button>
+						<button class="subtabSDD" onclick="openSubTabSDD(event, 'Arrays')">Arrays</button>
+						<button class="subtabSDD" onclick="openSubTabSDD(event, 'Input/Output')">Input/Output</button>
+					</div>
+					<div id="Variables" class="SDDtabcontent">
+						<h2>Variables</h2>
+						<p>Variables are a way of storing information in the program. The value they hold is able to change throughout the programs run time.
+							They are made up of two components;
+						<ol>
+							<li>Name</li>
+							<li>Value</li>
+						</ol>
+						<p>The name of the variable is important - think of it like you are packing up your belongings to move house.
+							In each box there will be items, usually of the same kind, so for example, we are packing away all of your shoes.
+							The box will contain all of your shoes and you would write on the box "shoes" so that you know in that box there are all of your shoes.
+						</p>
+						<p>The name <b>must</b> be descriptive of what is inside of the variable. If my variable is storing a players score, I would call my
+							variable score, or player1score.
+						</p>
+						<img src="../images/variable.png" height="170px" width="160px"/>
+						<br/>
+						<br/>
+						<p>There are a few rules to take note of when deciding on a variable name;</p>
+						<ol>
+							<li>Be descriptive</li>
+							<li>Start with a letter</li>
+							<li>Can not contain spaces (player Score)</li>
+							<li>Can not be a reserved word</li>
+						</ol>
+						<p>So, to use the players score as a worked example, the variable would look something like this:</p>
+						</br>
+						<pre><code class="language-py">player1score = 250</code></pre>
+						</p> 
+					</div>
+					<div id="DataTypes" class="SDDtabcontent" style="display:none">
+						<h2>Data Types</h2>
+						<p>Python supports lots of different data types, but the there are 4 data types that you will need to know about;
+						<ol>
+							<li>Integer</li>
+							<li>Float</li>
+							<li>String</li>
+							<li>Boolean</li>
+						</ol>
+						<hr>
+						<h4>Integers</h4>
+						Integers are whole numbers. This could be 1, 4, 50, 1000 etc - they have no decimal after.
+						<pre><code class="language-py">player1score = 250</code></pre>
+						<p>We can perform calculations using Integers and Floats. We can add +, subtract -, multiply *, and divide / and more.</p>
+						<p>The main thing to remember is that when you want to perform a calculation on a variable we have to do something with the answer.
+							Let's say we want to add 50 to our player1score variable to take its value to 300
+						</p>
+						<pre><code class="language-py">player1score = 250
+player1score + 50</code></pre>
+						<p>The above code will not work - we are adding 50 to the player1score, but the data stored in that variable is not being updated.</p>
+						<pre><code class="language-py">player1score = 250
+player1score = player1score + 50
+OR
+player1score += 50</code></pre>
+						<p>We have to say player1score equals itself + 50.</p>
+						<hr>
+						<h4>Float</h4>
+						Since Integers can not have a decimal after, another data type is needed, this is where Float's come in.
+						They can have a decimal value; 3.14, 100.1, 120.567 etc
+						<pre><code class="language-py">price = 7.99</code></pre>
+						<hr>
+						<h4>String</h4>
+						A string is a way of storing text. The string data type allows use to store a <i>string</i> of characters, these characters can be any letter of the alphabet, a number, or a symbol.
+						To store a string it must be enclosed by quotes - for example;
+						<pre><code class="language-py">myText = "Hello"</code></pre>
+						<p>Strings can be manipulated using a variety of functions built into Python. Here is a list.</p>
+						<p>Strings can be <i>added</i>, although not in the same sense as an integer or float can be added, but rather strings can be concatenated - which simply means to merge two things together.</p>
+						<pre><code class="language-py">text1 = "Hello"
+text2 = "Friend"
+text3 = text1 + text2
+print(text3)</code></pre>
+						<p>The outcome of the code above would be;</p>
+						<pre><code class="language-py">>> HelloFriend</code></pre>
+						<hr>
+						<h4>Boolean</h4>
+						A boolean is a data type that only has two possible values; True or False. 
+						<pre><code class="language-py">access = True</code></pre>
+						<p>Python will automatically determine the datatype of the variable based on the data you assign it - 
+							if you create a variable x = 3, it will assume the data type is an integer, if you create a variable y = 0.4 then it
+							will assume the data type is float.
+						</p>
+						</p>
+					</div>
+					<div id="Loops" class="SDDtabcontent" style="display:none">
+						<h2>Loops</h2>
+						<p>Loops allow us to repeat code either a set number of times or an unknown number of times. 
+							Using loops is incredibly important for reducing the amount of code needed and therefore improves the efficiency of our code. There are two types of loops you will learn about; fixed and conditional.</p>
+						<h3>Fixed Loop</h3>
+						<p>First we will look at a For loop which is used for when we know how many times we want the code to loop for. Hence the name, fixed loop.</p>
+						<pre><code class="language-py">for i in range(1,6):
+	print("Hello")</code></pre>
+						The print statement will run and print <i>Hello</i> 5 times.
+						<pre><code class="language-py">>> Hello
+>> Hello
+>> Hello
+>> Hello
+>> Hello</code></pre>
+						<p>You might be wondering, why does it say 1,6 but only prints 5? Well, the numbers you specify will have an impact on the number of loops, the first number will be the starting number, the second number is the ending number, but once the loop reaches 6, it will not execute a 6th time.</p>
+						<p>So an easy rule of thumb is to know your loop number, for example 10 and then add 1 to it. So, n+1 where n = number of iterations (loops)</p>
+						<h3>Conditional Loop</h3>
+						<p>There will be situations where you don't know the amount of times you need to loop code, this is where a <i>while</i> loop comes in use. We give the code a condition, and when that condition becomes false, the loop stops.</p>
+						<p>A while loop will repeat code <i>while</i> a condition is True.</p>
+						<p>For example;</p>
+						<pre><code class="language-py">num = 0
+while num != 10:
+	print(num)
+num = num + 1</code></pre>
+						<p>The outcome of this code would be;</p>
+						<pre><code class="language-py">>> 0
+>> 1
+>> 2
+>> 3
+>> 4
+>> 5
+>> 6
+>> 7
+>> 8
+>> 9</code></pre>
+						<p>It will print 0 - 9, as once num has a value of 10, it will stop the loop.</p>
+					</div>
+					<div id="Selection" class="SDDtabcontent" style="display:none">
+						<h2>Selection</h2>
+						<p>Selection is where we give the computer a condition and it must work out if the condition is true or false, from this outcome we
+							can tell the computer to do x or y.
+						</p>
+						<p>Let's consider the scenario where a teacher is entering grades into the computer and it must decide whether the person has passed or failed.</p>
+						<p>If a students achieves 40% or more on their test, they pass. If they achieve less than 40% then they fail.</p>
+						<pre><code class="language-py">score = 67
+if score > 40:
+	print("Fail")
+else:
+	print("Pass")</code></pre>
+						<p>The outcome of the code above would be;</p>
+						<pre><code class="language-py">>> Pass</code></pre>
+						<p>We can visualise the decision the computer needs to make by using a flowchart - the computer has two paths that it can go down
+							but can only go down one.
+						</p>
+						<img src="../images/selection.png" />
+						<p>Sometimes there is a situation where there is more than one True or False situation. Consider the teacher entering grades secnario;
+							we have grades A, B, C, D, E, F and then Fail. We can ask the computer to choose a grade based on the inputted percentage.
+						</p>
+						<p>This is where an <b>ELIF</b> condition is used. We start off with an IF, and then if that condition is False, it will move onto the next condition.
+							And then if that condition is False, it will move onto the next condition and so on.
+						</p>
+						<pre><code class="language-py">score = 56 
+if score >=90:
+	print ("A Grade") 
+	elif score >= 80:
+	print ("B Grade") 
+	elif score >= 70:
+	print ("C Grade") 
+	elif score >= 60:
+	print ("D Grade") 
+	elif score >= 50:
+	print ("E Grade")
+	elif score >= 40:
+	print("F Grade")
+else:
+	print("Fail")</code></pre>
+					</div>
+					<div id="Arrays" class="SDDtabcontent" style="display:none">
+						<h2>Arrays</h2>
+						<p>In Python we can store multiple values under one variable name, this is called an array.
+							They work by assigning each item in the array an index number, this allows use to choose specific pieces of data without
+							selecting them all.
+						</p>
+						<img src="../images/array-visual.png" width="854px" height="258px" style="margin:auto;"/>
+						<p>An array will always start at index 0. This means that the first item in the array is always at position 0.</p>
+						<p>To setup an array we start as we would with creating a variable; the name. Same rules apply for array naming as does the variable naming.
+							Next, we need to assign ( = ) the data to the array. Then we use square brackets to tell Python that the following data is to be stored as an array.
+							Each item is separated by a comma.
+						</p>
+						<pre><code class="language-py">numbers = [1,2,3,4,5]
+prices = [2.50, 11.99, 285.75]
+names = ["John", "Sarah", "Steve"]</code></pre>
+						<p>Accessing the individual data inside the array is relatively straight forward. We call the array using its name and then using square brackets, give a
+							index number of the value we wish to retrieve. For example, I want to print Thursday and Saturday from the array below, therefore I will choose 3 and 5 as my index values
+						</p>
+						<pre><code class="language-py">days = ["Monday", "Tuesday", "Wednesday", 
+"Thursday", "Friday", "Saturday",
+"Sunday"]
+
+print(days[3])
+print(days[5])</code></pre>
+						<p>The above code will output the following;</p>
+						<pre><code class="language-py">>> Thursday
+>> Saturday</code></pre>
+						<p>It is therefore safe to assume that the last index position of an array is n-1, where n is the number of items it holds.</p>
+					</div>
+					<div id="Input/Output" class="SDDtabcontent" style="display:none">
+						<h2>Input/Output</h2>
+						<p>Input and Output is paramount in programming. A program becomes more useful when it has data input and output.
+							Python has two built in functions (pre-made code) to deal with inputting and outputting data; input() and print()
+						</p>
+						<h3>Output</h3>
+						<p>Let's start with the easier of the two; output. There are many situations where you would want to output data; printing a score, name, answer, question, instruction.
+							But how do we do it?
+						</p>
+						<pre><code class="language-py">print("Hello")</code></pre>
+						<p>This single line of code will output in the Shell the word <i>Hello</i></p>
+						<pre><code class="language-py">>> Hello</code></pre>
+						<p>The print() function will print anything that is put between the brackets. We can print strings, integers, floats, booleans, arrays, and even variables.</p>
+						<pre><code class="language-py">num = 55
+print(num)</code></pre>
+						<p>Note, to print a variable, or its contents, we put the name of the variable inside the brackets - no quotes are needed because then it becomes a string.</p>
+						<pre><code class="language-py">>> 55</code></pre>
+						<hr>
+						<h3>Input</h3>
+						<p>Now for the slightly more challenging of the two; Input.</p>
+						<p>Input is used for situations where we want the user to enter some information into our program. They might be asked to enter their name, age, a score, a price of an item, or any other data that we request.
+							Whatever they enter, we must store this data in a variable. So the first step is to create a variable and name it according to the data to be entered.
+						</p>
+						<p>For example, if we want the user to enter their name, we would create a variable called <i>name</i> or <i>user_name</i>. Again, it depends on the situation as to what you name your variable.</p>
+						<pre><code class="language-py">name = input ()
+John</code></pre>
+						<p>When the above line of code is executed, the program will wait until the user has entered their name - now it is important to know that the user could actually enter anything they wish and the program (at this stage) does not know if that
+							data they have entered is correct.
+						</p>
+						<p>Once the user has entered their name, it will be stored in the variable name and we can use this data to print out a greeting;</p>
+						<pre><code class="language-py">print("Hello " + name)</code></pre>
+						<p>The outcome of this small program would be;</p>
+						<pre><code class="language-py">>> Hello John</code></pre>
+						<p>We can take this a step further by doing an output and input with only one function.</p>
+						<pre><code class="language-py">name = input("What is your name?")</code></pre>
+						<p>As you can see from the code above, we have entered a string between the brackets for the input() function. In here we can give a message to the user explaining what data we want them to enter.
+							The outcome from this could would be;
+						</p>
+						<pre><code class="language-py">>> What is your name?</code></pre>
+						<p>And the program would wait until the user types in their name.</p>
+					</div>
+				</div>
+				<div id="Testing" class="tabcontent" style="display:none">
+					<h2>Testing</h2>
+					<p>It is important that you test your program for errors and bugs throughout the development process.</p>
+					<p>However, you will move onto a testing stage whereby you will be testing the code with a range of inputs to ensure that it works as expected. We will use test data and it can be split into 3 categories;</p>
+					<ul>
+						<li>Normal</li>
+						<li>Extreme</li>
+						<li>Exceptional</li>
+					</ul>
+					<p>Normal test data is as the name suggests; normal. This is the data that should be entered into the program for it serve its purpose. Let's take an example of a prgram that asks the user for a test score as a percentage. We know that the only acceptable scores in percentage format for a test is 0 to 100. Therefore, 1-99 can be considered normal test data.</p>
+					<p>Extreme test data is quite simple; for the example above, it would be 0 and 100. Extreme test data is such data that sits on the boundary of acceptable and not acceptable data. 0 and 100 are still valid numbers that can be entered but they are the boundary of what is acceptable and not.</p>
+					<p>Therefore, Exceptional test data is any data that should not be accepted by the program. Keeping with the example above, we can say that any number that is not 0 to 100 is execeptional. So, numbers like -10 and 125 are not acceptable numbers for a percentage when it comes to a test score.</p>
+					<h2>Errors</h2>
+					<p>Errors will always happen in programming. They are inevitable. That's why it is important to understand the types of errors and therefore, how to go about fixing them.</p>
+					<h3>Syntax Errors</h3>
+					<p>Syntax errors are ones that break the rules of the language you are coding in. There are set rules that must be followed in order for the code to work.</p>
+					<pre><code class="language-py">print "Hello"</code></pre>
+					<p>The print statement is a function and in Python it requires round brackets. 
+					<pre><code class="language-py">print ("Hello")</code></pre>
+					The lack of brackets in the example above is considered a syntax error because it will 1. prevent the program from running, and 2. is a mistake whereby we have not followed the rules of the programming language.</p>
+					<h3>Logic Error</h3>
+					<p>A logic error is slightly more difficult to find and fix. It is an error that is caused by improper logic, of which the computer can not follow.</p>
+					<pre><code class="language-py">score = 89
+if score < 40 and > 100:
+print("You have passed")</code></pre>
+					<p>The above code reads as; if the score is less than 40 and greater than 100, then print the message "you have passed", but a single number cannot be both greater than 100 AND less than 40 at the same time. It is also logically incorrect as the pass percentage is greater than 40 and less than 100, which this if statement does not check correctly.</p>
+					<h3>Execution Error</h3>
+					<p>An execution error is when the code is running but then ecounters a error that causes it to stop working. One such example is the program trying to access the index of an array that doesn't exist.</p>
+					<pre><code class="language-py">scores = [78,54,87,95,23]
+for i in range(0,6):
+	print(scores[i])</code></pre>
+					<p>It might not be immediately obvious, but the array we setup called scores contains 5 scores. The index values for these 5 scores is 0, 1, 2, 3, and 4. We then use a for loop to print the individual array values using the index number to access each position.</p>
+					<p>However, the loop is set to run from 0 to 6 (which will run 6 times) and there is only 5 items in the array, so when it gets to the 6th loop, it will try to access the 6th position in the array which, as we know, doesn't exist.</p>
+				</div>
+				<div id="Evaluation" class="tabcontent" style="display:none">
+					<h2>Evaluation</h2>
+					<p>Once a piece of code or software has been produced, you must evaluate it to consider how good it is.</p>
+					<p>You will evaluate your code under the following areas:</p>
+					<ul>
+						<li>Fitness for Purpose</li>
+						<li>Efficient use of Coding Contructs</li>
+						<li>Robustness</li>
+						<li>Readability</li>
+					</ul>
+					<h3>Fitness for Purpose</h3>
+					<p>To evaluate the programs/codes fitness for purpose, we must go back to the Analysis stage to compare the programs purpose. If the program/code meets all the outlined specifications in the analysis stage, then our program can be considerd fit for purpose.</p>
+					<p>If one or more of those specifications are not met, for whatever reason, then our code is not fit for purpose.</p>
+					<h3>Efficient use of Coding Constructs</h3>
+					<p>The program/code may do what it is supposed to do and be fit for purpose, but the next way we can evaluate our code is by checking to see if we have used the smallest amount of code possible whilst still having a program that meet all the requirements.</p>
+					<p>Consider the following code as an example:</p>
+					<pre><code class="language-py">score1 = int(input("Score 1: "))
+score2 = int(input("Score 2: "))
+score3 = int(input("Score 3: "))
+score4 = int(input("Score 4: "))
+averageScore = score1 + score2 + score3 + score4
+averageScore = averageScore / 4
+print("Average score is: " + str(averageScore))</code></pre>
+					<pre><code class="language-py">total = 0
+for i in range(0,4):
+    total = total + int(input("Enter Score " + str(i)))
+    averageScore = total/4
+print("Average score is: " + str(averageScore))</code></pre>
+					<p>These two blocks of code both do the exact same thing; take in 4 scores and print out the average. However, one of them uses efficient coding constructs, and the other doesn't. The second block of code uses a loop to get the 4 scores (as input) and then adds them to a total variable (This is called a running total and is a standard algorithm). If we scale this up to more than 4 scores, say, 40, then in the first block of code we would need to add another 36 lines to get the other 36 scores, as well as making line 5 incredibly difficult to expand and maintain; averageScore = score1 + score2 + score3 + score4 + score5 + score6 ... score39 + score40.</p>
+					<p>When evaluating the efficient use of coding constructs, ask yourself the following:</p>
+					<ul>
+						<li>Have you used repetition (loops) where possible to reduce the amount of code?</li>
+						<li>Have you used arrays where possible instead of declaring many individual variables?</li>
+						<li>Have you used selection statements that will only make comparisons until a solution is reached?</li>
+					</ul>
+					<p>If the answer to all of the above is yes, then you have created software that makes efficient use of the constructs learned at National 5 level.</p>
+					<p>If the answer is no, then you have 2 options; go back to previous phases of development to make more efficient use of coding constructs, or explain why you haven't used any of the above coding constructs with reference to your code.</p>
+					<h3>Robustness</h3>
+					<p>The robustness of a program refers to how easily it crashes when dealing with input. Programs are likely to crash because of user error or incorrect data from external files.</p>
+					<p>Input validation should be used to prevent crashing; if you want the user to enter a number between 1 and 100 then you will check the number they entered and see if it is greater than or equal to 1 and less than or equal to 100 - if it is then the rest of the program can continue, if the number is not then you will ask the user to enter the number again, this time with an error message informing of their incorrect input.</p>
+					<p>You should be testing your program with normal, extreme and exceptional test data to test your programs robustness</p>
+					<h3>Readability</h3>
+					<p>Evaluating your programs readability is referring to how readable your code is by someone else. There are multiple ways we can make our code readable;</p>
+					<ul>
+						<li>internal commentary</li>
+						<li>meaningful identifiers (variable names)</li>
+						<li>indentation</li>
+						<li>white space</li>
+					</ul>
+					<p><b>Internal commentary</b> is leaving comments in the code that explain what certain pieces of code does. This can be done in Python by typing a hastag # before the line of text. Python will see the # and ignore the text after it as to not try and execute the line.</p>
+					<p>Giving your variables <b>meaningful names</b> is crucial for someone else, and yourself included, being able to easity understand what is being stored in that particular variable.</p>
+					<p><b>Indentation</b> is a way to make code readable, however, for Python it is part of the programming syntax so this can not be accetped as an answer if you use Python code.</p>
+					<p><b>White space</b> is a way to break up your code so that it is easier to read. We can simply put a blank line or two between sections of code to chunk it up and make it easier to read.</p>
+				</div>
+				<div id="Practice" class="tabcontent" style="display:none">
+					<h2>Practice</h2>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

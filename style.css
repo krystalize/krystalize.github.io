@@ -256,7 +256,7 @@ h1, a:visited{
 	background-color:black;
 }
 
-.flowchart_table .symbolCol{
+.flowchart_table .symbolCol, .structureDiagram_table .symbolCol {
 	width:25%;
 }
 
@@ -340,7 +340,7 @@ td, .top, input {
 	margin:auto;
 }
 
-.flowchart_table svg{
+.flowchart_table, .structureDiagram_table svg{
 	stroke:black;
 	stroke-width:1.5px;
 	fill:white;

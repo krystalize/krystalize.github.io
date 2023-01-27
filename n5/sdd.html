@@ -78,7 +78,7 @@
 				</div>
 				<div id="Design" class="tabcontent" style="display:none">
 					<h2>Design</h2>
-					<p>The design stage is where the program is broken down into a plan of how the programmer or team will solve the problem.</p>
+					<p>The design stage is where the program is broken down into a plan of how the programmer or team will solve the problem. They will look at how the program sohuld flow, what inputs, proccesses and outputs should happen and at what particular stage.</p>
 					<h3>Design Notation</h3>
 					<p>The program that is to be written will be designed using one of three design notations;</p>
 					<ol>
@@ -247,10 +247,11 @@ else:
 					<div class="subtabSDD">
 						<button class="subtabSDD active" onclick="openSubTabSDD(event, 'Variables')">Variables</button>
 						<button class="subtabSDD" onclick="openSubTabSDD(event, 'DataTypes')">Data Types</button>
+						<button class="subtabSDD" onclick="openSubTabSDD(event, 'Input/Output')">Input/Output</button>
 						<button class="subtabSDD" onclick="openSubTabSDD(event, 'Loops')">Loops</button>
 						<button class="subtabSDD" onclick="openSubTabSDD(event, 'Selection')">Selection</button>
 						<button class="subtabSDD" onclick="openSubTabSDD(event, 'Arrays')">Arrays</button>
-						<button class="subtabSDD" onclick="openSubTabSDD(event, 'Input/Output')">Input/Output</button>
+						<button class="subtabSDD" onclick="openSubTabSDD(event, 'Algorithms')">Standard Algorithms</button>
 					</div>
 					<div id="Variables" class="SDDtabcontent">
 						<h2>Variables</h2>
@@ -343,7 +344,7 @@ print(text3)</code></pre>
 						<p>First we will look at a For loop which is used for when we know how many times we want the code to loop for. Hence the name, fixed loop.</p>
 						<pre><code class="language-py">for i in range(1,6):
 	print("Hello")</code></pre>
-						The print statement will run and print <i>Hello</i> 5 times.
+						<p>The print statement will run and print <i>Hello</i> 5 times.</p>
 						<pre><code class="language-py">>> Hello
 >> Hello
 >> Hello
@@ -414,10 +415,8 @@ else:
 					</div>
 					<div id="Arrays" class="SDDtabcontent" style="display:none">
 						<h2>Arrays</h2>
-						<p>In Python we can store multiple values under one variable name, this is called an array.
-							They work by assigning each item in the array an index number, this allows use to choose specific pieces of data without
-							selecting them all.
-						</p>
+						<p>In Python we can store multiple values under one variable name, this is called an array. They work by assigning each item in the array an index number, this allows use to choose specific pieces of data without selecting them all.</p>
+						<p>You can use multiple arrays in a single program to store different collections of data.</p>
 						<img src="../images/array-visual.png" width="854px" height="258px" style="margin:auto;"/>
 						<p>An array will always start at index 0. This means that the first item in the array is always at position 0.</p>
 						<p>To setup an array we start as we would with creating a variable; the name. Same rules apply for array naming as does the variable naming.
@@ -481,6 +480,16 @@ John</code></pre>
 						</p>
 						<pre><code class="language-py">>> What is your name?</code></pre>
 						<p>And the program would wait until the user types in their name.</p>
+					</div>
+					<div id="Algorithms" class="SDDtabcontent" style="display:none">
+						<p>In programming there are some universally agreed standards on how to program a particular algorithm; <i>Standard Algorithms</i>. They set out the standard practice of writing the code in order to solve a problem.</p>
+						<ul>
+							<li>Running Total</li>
+							<li>Traversing 1-D Array</li>
+							<li>Input Validation</li>
+						</ul>
+						<h3>Running Total</h3>
+						<p></p>
 					</div>
 				</div>
 				<div id="Testing" class="tabcontent" style="display:none">

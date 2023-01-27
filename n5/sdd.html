@@ -493,8 +493,8 @@ John</code></pre>
 						<p>Some programs you will need to keep a running total. This could be a total count, or a total sum of all inputted values.</p>
 						<p>An example would be your program is to keep a running total of the number of daily visitors to a park for a week;</p>
 <pre><code class="language-py">weeklyVisitors = 0
-for i in range(0, 7):
-	dailyVisitors = int(input("Enter the number of visitors for day ", i+1))
+for i in range(1, 8):
+	dailyVisitors = int(input("Enter the number of visitors for day " + str(i)))
 	weeklyVisitors = weeklyVisitors + dailyVisitors
 </code></pre>
 						<p>This would output:</p>
@@ -507,6 +507,17 @@ for i in range(0, 7):
 							<li>we then use the weeklyVisitors variable to set its new value to equal itself plus dailyVisitors variable</li>
 						</ol>
 						<p>Line 3 is where we keep a running total of the weekly visitors as the content of the variable is constantly changed when the program is run.</p>
+						<p>Another isntance you will expected to implement a running total is when using an array;</p>
+<pre><code class="language-py">dailyVisitors = [23,32,45,26,28,66,78]
+weeklyVisitors = 0
+for i in range(0, len(dailyVisitors)):
+	weeklyVisitors = weeklyVisitors + dailyVisitors[i]
+
+print("The total weekly visitors was:", weeklyVisitors)
+</code></pre>
+						<p>The code above would produce the following output;</p>
+<pre><code class="language-py">>> The total weekly visitors was: 298 </code></pre>
+						<p>When using an array we need to use a fixed loop to allow us to loop through the array and access each index position and therefore its value to add to our running total.</p>
 					</div>
 				</div>
 				<div id="Testing" class="tabcontent" style="display:none">

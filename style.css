@@ -190,11 +190,11 @@ h1, a:visited{
 	float:left;
 	border:none;
 	cursor:pointer;
-	padding:8px 2px;
+	padding:4px 8px;
 	transition:0.3s;
 	font-size:15px;
 	color:white;
-	width:141px;
+	width:170px;
 	min-width:70px;
 	margin-left:1px;
 	margin-right:1px;
@@ -205,11 +205,11 @@ h1, a:visited{
 	float:left;
 	border:none;
 	cursor:pointer;
-	padding:4px 8px;
+	padding:8px 2px;
 	transition:0.3s;
 	font-size:15px;
 	color:white;
-	width:164px;
+	width:141px;
 	min-width:70px;
 	margin-left:1px;
 	margin-right:1px;

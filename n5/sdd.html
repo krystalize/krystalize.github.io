@@ -482,6 +482,7 @@ John</code></pre>
 						<p>And the program would wait until the user types in their name.</p>
 					</div>
 					<div id="Algorithms" class="SDDtabcontent" style="display:none">
+						<h2>Standard Algorithms</h2>
 						<p>In programming there are some universally agreed standards on how to program a particular algorithm; <i>Standard Algorithms</i>. They set out the standard practice of writing the code in order to solve a problem.</p>
 						<ul>
 							<li>Running Total</li>
@@ -489,7 +490,23 @@ John</code></pre>
 							<li>Input Validation</li>
 						</ul>
 						<h3>Running Total</h3>
-						<p></p>
+						<p>Some programs you will need to keep a running total. This could be a total count, or a total sum of all inputted values.</p>
+						<p>An example would be your program is to keep a running total of the number of daily visitors to a park for a week;</p>
+<pre><code class="language-py">weeklyVisitors = 0
+for i in range(0, 7):
+	dailyVisitors = int(input("Enter the number of visitors for day ", i+1))
+	weeklyVisitors = weeklyVisitors + dailyVisitors
+</code></pre>
+						<p>This would output:</p>
+<pre><code class="language-py">>> Enter the number of visitors for day 1</code></pre>
+						<p>In the code above, we have a couple of things happening;</p>
+						<ol>
+							<li>we set up a variable to store the weekly total visitors - this variable will constantly be updated with the new weekly total as we add each days values into the program.</li>
+							<li>we begin a loop for the number of days in a week</li>
+							<li>in this loop we get input from the user by asking them how many visitors to the park were observed in each day and store this value in dailyVisitors variable</li>
+							<li>we then use the weeklyVisitors variable to set its new value to equal itself plus dailyVisitors variable</li>
+						</ol>
+						<p>Line 3 is where we keep a running total of the weekly visitors as the content of the variable is constantly changed when the program is run.</p>
 					</div>
 				</div>
 				<div id="Testing" class="tabcontent" style="display:none">

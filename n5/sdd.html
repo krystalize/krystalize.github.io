@@ -489,6 +489,24 @@ John</code></pre>
 							<li>Traversing 1-D Array</li>
 							<li>Input Validation</li>
 						</ul>
+						<h3>Traversing a 1D Array</h3>
+						<p>Traversing a 1 dimensional array is simply using a loop to step through the array to access the data stored at each index position.</p>
+						<p>You should look back at Arrays if you are still unsure as to how they work.</p>
+						<p>We can use a fixed loop to step through each index position, due to a fixed loop using a variable as a counter, we can use this counter as the index position of the array. As a quick example we have an array containing the daily visitor numbers for a park in a week.</p>
+<pre><code class="language-py">dailyVisitors = [23,32,45,26,28,66,78]
+for i in range(0, len(dailyVisitors)):
+	print(dailyVisitors[i])
+</code></pre>
+						<p>The code above will produce the following output;</p>
+<pre><code class="language-py">>> 23
+>> 32
+>> 45
+>> 26
+>> 28
+>> 66
+>> 78
+</code></pre>
+						<p>As the for loop runs, i will be given the value 0, then 1, then 2, then 3 and so on until it's value is 8 at which point the fixed loop stops. We then use this value stored in the variable i to tell the computer to print whatever data is stored in the array at that position.</p>
 						<h3>Running Total</h3>
 						<p>Some programs you will need to keep a running total. This could be a total count, or a total sum of all inputted values.</p>
 						<p>An example would be your program is to keep a running total of the number of daily visitors to a park for a week;</p>
